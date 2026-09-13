@@ -26,6 +26,7 @@ footer p { /* Align footer text right */
 
 div { /* Adjust image position */
     position: relative;
+    display: inline-block;
 }
 
 span { /* Position span absolutely at the bottom-right */
