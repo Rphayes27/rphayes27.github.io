@@ -7,10 +7,10 @@ li { /* Change background */
     background-color: blue;
 
     /* Experiment for #3 */
-     margin: 0 30px; 
+    /* margin: 0 30px; */
 
     /* Experiment for #3b */
-    /* margin: 0 30em; */
+     margin: 0 30em; 
 
     /* Experiment for #4 */
     /* padding: 0 30px; */
