@@ -5,7 +5,6 @@ ul { /* Make unordered list look like nav bar */
 
 li { /* Change background */
     background-color: blue;
-    margin: 0 30px;
 
     /* Experiment for #3 */
     /* margin: 0 30px; */
