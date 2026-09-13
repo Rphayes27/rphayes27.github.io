@@ -1,0 +1,43 @@
+ul { /* Make unordered list look like nav bar */
+    list-style-type: none;
+    display: flex;
+}
+
+li { /* Change background */
+    background-color: darkblue;
+    color: white;
+
+    /* Experiment for #3 */
+    /* margin: 0 30px; */
+
+    /* Experiment for #3b */
+    /* margin: 0 30em; */
+
+    /* Experiment for #4 */
+    /* padding: 0 30px; */
+
+    /* Experiment for #4b */
+    /* padding: 0 30em; */
+}
+
+footer p { /* Align footer text right */
+    text-align: right;
+}
+
+div { /* Adjust image position */
+    position: relative;
+}
+
+span { /* Position span absolutely at the bottom-right */
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+@media screen and (min-width: 800px) { 
+    /* Adjust image size */
+    img {
+        width: 400px;
+        height: 400px;
+    }
+}
