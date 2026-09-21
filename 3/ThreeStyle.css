@@ -1,0 +1,59 @@
+body {
+    background-color: #e8f5e9;
+    color: black;
+    font-family: "Courier New", monospace;
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    background-color: white;
+    color: black;
+    padding: 20px;
+}
+
+h1, h2, h3, h4 {
+    font-family: "Courier New", monospace;
+    color: white;
+}
+
+section {
+    background-color: white;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+}
+
+.mamm-card {
+    background-color: #5c4120;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 10px;
+}
+
+.bird-card {
+    background-color: #cc3b3b;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 10px;
+}
+
+.rept-card {
+    background-color: #1a421e;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 10px;
+}
+
+.amph-card {
+    background-color: #1c495f;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 10px;
+}
+
+a {
+    color: #1565c0;
+}
