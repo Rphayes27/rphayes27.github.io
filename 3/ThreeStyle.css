@@ -12,6 +12,7 @@ header {
     background-color: white;
     color: black;
     padding: 20px;
+    border-radius: 10px;
 }
 
 h1, h2, h3, h4 {
@@ -19,39 +20,67 @@ h1, h2, h3, h4 {
     color: black;
 }
 
+h2, h3 {
+    margin-top: 0;
+}
+
 section {
-    background-color: black;
+    background-color: white;
     padding: 20px;
     margin: 20px 0;
     border-radius: 10px;
 }
 
+
 .mamm-card {
     background-color: #5c4120;
+    color: white;
     padding: 15px;
     margin: 10px 0;
     border-radius: 10px;
 }
+
+.mamm-card h4 {
+    color: white;
+}
+
 
 .bird-card {
     background-color: #cc3b3b;
+    color: white;
     padding: 15px;
     margin: 10px 0;
     border-radius: 10px;
 }
+
+.bird-card h4 {
+    color: white;
+}
+
 
 .rept-card {
     background-color: #1a421e;
+    color: white;
     padding: 15px;
     margin: 10px 0;
     border-radius: 10px;
 }
 
+.rept-card h4 {
+    color: white;
+}
+
+
 .amph-card {
     background-color: #1c495f;
+    color: white;
     padding: 15px;
     margin: 10px 0;
     border-radius: 10px;
+}
+
+.amph-card h4 {
+    color: white;
 }
 
 a {
