@@ -9,12 +9,12 @@ body {
     display: flex;
     flex-direction: column;
     font-family: Arial, sans-serif;
-    background-color: #eb5058;
+    background-color: #f198ba;
 }
 
 
 header {
-    background-color: #eb5058;
+    background-color: #f198ba;
     color: white;
     text-align: center;
     padding: 25px;
@@ -22,7 +22,7 @@ header {
 
 
 h1 {
-    color: #eb5058;
+    color: black;
     font-size: 32px;
     text-shadow: 2px 2px 4px #000000;
     margin: 0;
@@ -30,7 +30,7 @@ h1 {
 
 
 h2 {
-    color: #2c3e50;
+    color: black;
     text-align: center;
 }
 
@@ -69,15 +69,15 @@ section {
 .linkOne a,
 .linkTwo a,
 .linkthree a {
-    color: #b9299a;
+    color: black;
     font-size: 18px;
     text-decoration: none;
 }
 
 
 footer {
-    background-color: #b9299a;
-    color: white;
+    background-color: #e76698;
+    color: black;
     text-align: center;
     padding: 20px;
 }
