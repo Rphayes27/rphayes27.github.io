@@ -51,7 +51,8 @@ section {
 
 .linkOne,
 .linkTwo,
-.linkthree {
+.linkthree,
+.linkfour {
     text-align: center;
     margin: 20px auto;
 }
@@ -59,7 +60,8 @@ section {
 
 .linkOne ul,
 .linkTwo ul,
-.linkthree ul {
+.linkthree ul,
+.linkfour ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
@@ -68,7 +70,8 @@ section {
 
 .linkOne a,
 .linkTwo a,
-.linkthree a {
+.linkthree a,
+.linkfour a {
     color: #471025;
     font-size: 18px;
     text-decoration-line: underline;
