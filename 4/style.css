@@ -1,12 +1,25 @@
-@import url('https://fonts.cdnfonts.com/css/horizon');
+@font-face {
+    font-family: "Horizon";
+    src: url("fonts/Horizon.woff2") format("woff2");
+    font-style: normal;
+    font-weight: normal;
+    font-display: swap;
+}
 
 * {
     box-sizing: border-box;
-    font-family: "Horizon", Arial, sans-serif;
 }
 
 html {
     scroll-behavior: smooth;
+}
+
+body,
+button,
+input,
+textarea,
+select {
+    font-family: "Horizon", "Arial Black", sans-serif;
 }
 
 body {
@@ -15,7 +28,7 @@ body {
     display: flex;
     flex-direction: column;
     background-color: #f5f2ec;
-    color: #1f1f1f;
+    color: #202020;
     line-height: 1.6;
 }
 
@@ -51,7 +64,6 @@ a {
     list-style: none;
     display: flex;
     align-items: center;
-    flex-wrap: wrap;
     gap: 8px;
     margin: 0;
     padding: 0;
@@ -82,7 +94,7 @@ a {
     position: absolute;
     top: 100%;
     left: 0;
-    min-width: 230px;
+    min-width: 240px;
     background-color: #202820;
     border-radius: 0 0 8px 8px;
     overflow: hidden;
@@ -126,7 +138,6 @@ footer a:hover {
     text-decoration: underline;
 }
 
-
 .home-page {
     background-image:
         linear-gradient(
@@ -138,7 +149,7 @@ footer a:hover {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    min-height: 100vh;
 }
 
 .home-content {
@@ -160,12 +171,30 @@ footer a:hover {
 .bird-card,
 .rept-card,
 .amph-card {
-    background-color: rgba(255, 255, 255, 0.9);
     padding: 30px;
     border-radius: 18px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.22);
 }
 
+.mamm-card {
+    background-color: rgba(116, 86, 59, 0.93);
+    color: white;
+}
+
+.bird-card {
+    background-color: rgba(196, 105, 46, 0.93);
+    color: white;
+}
+
+.rept-card {
+    background-color: rgba(66, 108, 68, 0.93);
+    color: white;
+}
+
+.amph-card {
+    background-color: rgba(63, 112, 145, 0.93);
+    color: white;
+}
 
 .choice-information {
     width: min(1100px, 90%);
@@ -179,7 +208,7 @@ footer a:hover {
 }
 
 .choice-introduction h1 {
-    font-size: 2.5rem;
+    font-size: clamp(2rem, 5vw, 3rem);
     margin-bottom: 10px;
 }
 
@@ -203,12 +232,12 @@ footer a:hover {
     flex-direction: column;
     justify-content: center;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
-    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.16);
 }
 
 .choice-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 9px 18px rgba(0, 0, 0, 0.22);
+    box-shadow: 0 9px 18px rgba(0, 0, 0, 0.24);
 }
 
 .choice-card h2 {
@@ -240,7 +269,6 @@ footer a:hover {
     color: white;
 }
 
-
 .mammals-page {
     background-color: #f2ece5;
 }
@@ -269,7 +297,7 @@ footer a:hover {
 }
 
 .category-introduction h1 {
-    font-size: 2.5rem;
+    font-size: clamp(2rem, 5vw, 3rem);
     margin-bottom: 10px;
 }
 
@@ -292,14 +320,14 @@ footer a:hover {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.15);
     color: white;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.16);
 }
 
 .animal-choice-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 9px 18px rgba(0, 0, 0, 0.22);
+    box-shadow: 0 9px 18px rgba(0, 0, 0, 0.24);
 }
 
 .animal-choice-card h2 {
@@ -311,35 +339,35 @@ footer a:hover {
 }
 
 .black-rhino-choice {
-    background-color: #595959;
+    background-color: #565656;
 }
 
 .pangolin-choice {
-    background-color: #8a664a;
+    background-color: #896548;
 }
 
 .red-wolf-choice {
-    background-color: #a34f35;
+    background-color: #9d5037;
 }
 
 .saola-choice {
-    background-color: #697052;
+    background-color: #687054;
 }
 
 .amazon-choice {
-    background-color: #4e8355;
+    background-color: #487f52;
 }
 
 .condor-choice {
-    background-color: #555555;
+    background-color: #4f4f4f;
 }
 
 .kakapo-choice {
-    background-color: #6f8d46;
+    background-color: #718c48;
 }
 
 .kagu-choice {
-    background-color: #c97543;
+    background-color: #c87342;
 }
 
 .blue-iguana-choice {
@@ -359,22 +387,22 @@ footer a:hover {
 }
 
 .axolotl-choice {
-    background-color: #b9657e;
+    background-color: #bb6f8a;
 }
 
 .berry-cave-choice {
-    background-color: #a96764;
+    background-color: #aa716b;
 }
 
 .gorge-green-choice {
-    background-color: #5c7148;
+    background-color: #5e7249;
 }
 
 .lemur-leaf-choice {
     background-color: #608c4b;
 }
 
-
+.black-rhino-image-section,
 .rhino-image-section,
 .pangolin-image-section,
 .red-wolf-image-section,
@@ -392,11 +420,12 @@ footer a:hover {
 .gorge-green-image-section,
 .lemur-leaf-image-section {
     width: 100%;
-    height: 380px;
+    height: clamp(260px, 32vw, 380px);
     position: relative;
     overflow: hidden;
 }
 
+.black-rhino-image,
 .rhino-image,
 .pangolin-image,
 .red-wolf-image,
@@ -415,11 +444,12 @@ footer a:hover {
 .lemur-leaf-image {
     width: 100%;
     height: 100%;
+    display: block;
     object-fit: cover;
     object-position: center;
-    display: block;
 }
 
+.black-rhino-title,
 .rhino-title,
 .pangolin-title,
 .red-wolf-title,
@@ -441,11 +471,12 @@ footer a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgba(0, 0, 0, 0.22);
-    text-align: center;
     padding: 20px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.25);
 }
 
+.black-rhino-title h1,
 .rhino-title h1,
 .pangolin-title h1,
 .red-wolf-title h1,
@@ -464,11 +495,13 @@ footer a:hover {
 .lemur-leaf-title h1 {
     color: white;
     font-size: clamp(2rem, 5vw, 4rem);
+    line-height: 1.15;
     text-shadow: 2px 2px 7px black;
     margin: 0;
     max-width: 95%;
 }
 
+.black-rhino-information,
 .rhino-information,
 .pangolin-information,
 .red-wolf-information,
@@ -490,6 +523,7 @@ footer a:hover {
     padding: 45px 0;
 }
 
+.black-rhino-information > section,
 .rhino-information > section,
 .pangolin-information > section,
 .red-wolf-information > section,
@@ -513,6 +547,7 @@ footer a:hover {
     box-shadow: 0 5px 12px rgba(0, 0, 0, 0.12);
 }
 
+.black-rhino-information h2,
 .rhino-information h2,
 .pangolin-information h2,
 .red-wolf-information h2,
@@ -532,6 +567,7 @@ footer a:hover {
     margin-top: 0;
 }
 
+.black-rhino-information p,
 .rhino-information p,
 .pangolin-information p,
 .red-wolf-information p,
@@ -551,20 +587,21 @@ footer a:hover {
     margin-bottom: 0;
 }
 
-
+.black-rhino-description-card,
 .rhino-description-card {
-    background-color: #d7d5d1 !important;
+    background-color: #d5d5d2 !important;
 }
 
+.black-rhino-threats-card,
 .rhino-threats-card {
-    background-color: #504d49 !important;
+    background-color: #56524d !important;
     color: white;
 }
 
+.black-rhino-protection-card,
 .rhino-protection-card {
-    background-color: #b6a995 !important;
+    background-color: #b5aa96 !important;
 }
-
 
 .pangolin-description-card {
     background-color: #ddc2a3 !important;
@@ -579,7 +616,6 @@ footer a:hover {
     background-color: #b9956d !important;
 }
 
-
 .red-wolf-description-card {
     background-color: #d7a27e !important;
 }
@@ -592,7 +628,6 @@ footer a:hover {
 .red-wolf-protection-card {
     background-color: #bf7657 !important;
 }
-
 
 .saola-description-card {
     background-color: #d8d1bd !important;
@@ -607,7 +642,6 @@ footer a:hover {
     background-color: #b89d78 !important;
 }
 
-
 .amazon-description-card {
     background-color: #b8d8a8 !important;
 }
@@ -620,7 +654,6 @@ footer a:hover {
 .amazon-protection-card {
     background-color: #d5e2b9 !important;
 }
-
 
 .condor-description-card {
     background-color: #d0d0d0 !important;
@@ -636,7 +669,6 @@ footer a:hover {
     color: white;
 }
 
-
 .kakapo-description-card {
     background-color: #cad99f !important;
 }
@@ -649,7 +681,6 @@ footer a:hover {
 .kakapo-protection-card {
     background-color: #9faf67 !important;
 }
-
 
 .kagu-description-card {
     background-color: #deded9 !important;
@@ -664,7 +695,6 @@ footer a:hover {
     background-color: #b8bcc0 !important;
 }
 
-
 .blue-iguana-description-card {
     background-color: #b7d3e8 !important;
 }
@@ -677,7 +707,6 @@ footer a:hover {
 .blue-iguana-protection-card {
     background-color: #7da8c7 !important;
 }
-
 
 .cart-description-card {
     background-color: #cad9c2 !important;
@@ -692,7 +721,6 @@ footer a:hover {
     background-color: #8da692 !important;
 }
 
-
 .dary-snake-description-card {
     background-color: #d0c1aa !important;
 }
@@ -705,7 +733,6 @@ footer a:hover {
 .dary-snake-protection-card {
     background-color: #9c876a !important;
 }
-
 
 .red-belly-description-card {
     background-color: #d6aaa1 !important;
@@ -720,7 +747,6 @@ footer a:hover {
     background-color: #b9786d !important;
 }
 
-
 .axolotl-description-card {
     background-color: #f1cad6 !important;
 }
@@ -733,7 +759,6 @@ footer a:hover {
 .axolotl-protection-card {
     background-color: #dfa4b6 !important;
 }
-
 
 .berry-cave-description-card {
     background-color: #efd0c9 !important;
@@ -748,7 +773,6 @@ footer a:hover {
     background-color: #d89c93 !important;
 }
 
-
 .gorge-green-description-card {
     background-color: #cdd3aa !important;
 }
@@ -761,7 +785,6 @@ footer a:hover {
 .gorge-green-protection-card {
     background-color: #9aa76d !important;
 }
-
 
 .lemur-leaf-description-card {
     background-color: #d6e8aa !important;
@@ -776,7 +799,7 @@ footer a:hover {
     background-color: #94ba69 !important;
 }
 
-
+.black-rhino-sources ul,
 .rhino-sources ul,
 .pangolin-sources ul,
 .red-wolf-sources ul,
@@ -796,6 +819,7 @@ footer a:hover {
     padding-left: 25px;
 }
 
+.black-rhino-sources li,
 .rhino-sources li,
 .pangolin-sources li,
 .red-wolf-sources li,
@@ -815,6 +839,7 @@ footer a:hover {
     margin-bottom: 10px;
 }
 
+.black-rhino-sources a,
 .rhino-sources a,
 .pangolin-sources a,
 .red-wolf-sources a,
@@ -835,6 +860,7 @@ footer a:hover {
     overflow-wrap: anywhere;
 }
 
+.black-rhino-sources a:hover,
 .rhino-sources a:hover,
 .pangolin-sources a:hover,
 .red-wolf-sources a:hover,
@@ -854,7 +880,6 @@ footer a:hover {
     color: #153b2a;
 }
 
-
 .contact-information {
     width: min(800px, 90%);
     margin: auto;
@@ -867,7 +892,7 @@ footer a:hover {
 }
 
 .contact-introduction h1 {
-    font-size: 2.5rem;
+    font-size: clamp(2rem, 5vw, 3rem);
     margin-bottom: 10px;
 }
 
@@ -888,10 +913,6 @@ footer a:hover {
     display: flex;
     flex-direction: column;
     gap: 7px;
-}
-
-.form-group label {
-    font-size: 1rem;
 }
 
 .form-group input,
@@ -930,7 +951,6 @@ footer a:hover {
     background-color: #38533d;
 }
 
-
 .login-information {
     width: min(650px, 90%);
     margin: auto;
@@ -943,7 +963,7 @@ footer a:hover {
 }
 
 .login-introduction h1 {
-    font-size: 2.5rem;
+    font-size: clamp(2rem, 5vw, 3rem);
     margin-bottom: 10px;
 }
 
@@ -1008,21 +1028,17 @@ footer a:hover {
     margin-top: 0;
 }
 
-
-@media (max-width: 900px) {
+@media (max-width: 950px) {
 
     .navbar {
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
         gap: 10px;
     }
 
     .nav-links {
-        width: 100%;
-    }
-
-    .dropdown-content {
-        min-width: 200px;
+        justify-content: center;
+        flex-wrap: wrap;
     }
 
     .home-content,
@@ -1033,30 +1049,42 @@ footer a:hover {
 
 }
 
-
-@media (max-width: 650px) {
+@media (max-width: 700px) {
 
     .navbar {
+        position: static;
         padding: 15px;
     }
 
     .website-name {
+        white-space: normal;
+        text-align: center;
         font-size: 1rem;
     }
 
     .nav-links {
-        gap: 3px;
+        width: 100%;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 4px;
+    }
+
+    .nav-links li {
+        width: 100%;
     }
 
     .nav-links a {
-        padding: 8px;
-        font-size: 0.8rem;
+        width: 100%;
+        text-align: center;
+        padding: 9px;
+        font-size: 0.82rem;
     }
 
     .dropdown-content {
-        min-width: 180px;
+        display: none !important;
     }
 
+    .black-rhino-image-section,
     .rhino-image-section,
     .pangolin-image-section,
     .red-wolf-image-section,
@@ -1076,6 +1104,7 @@ footer a:hover {
         height: 250px;
     }
 
+    .black-rhino-information,
     .rhino-information,
     .pangolin-information,
     .red-wolf-information,
@@ -1096,6 +1125,7 @@ footer a:hover {
         padding: 25px 0;
     }
 
+    .black-rhino-information > section,
     .rhino-information > section,
     .pangolin-information > section,
     .red-wolf-information > section,
@@ -1132,6 +1162,64 @@ footer a:hover {
     .contact-card,
     .login-card {
         padding: 25px;
+    }
+
+    .home-content {
+        width: 92%;
+        padding: 35px 0;
+    }
+
+}
+
+@media (max-width: 430px) {
+
+    body {
+        font-size: 0.88rem;
+    }
+
+    .black-rhino-image-section,
+    .rhino-image-section,
+    .pangolin-image-section,
+    .red-wolf-image-section,
+    .saola-image-section,
+    .amazon-image-section,
+    .condor-image-section,
+    .kakapo-image-section,
+    .kagu-image-section,
+    .blue-iguana-image-section,
+    .cart-image-section,
+    .dary-snake-image-section,
+    .red-belly-image-section,
+    .axolotl-image-section,
+    .berry-cave-image-section,
+    .gorge-green-image-section,
+    .lemur-leaf-image-section {
+        height: 220px;
+    }
+
+    .choice-card,
+    .animal-choice-card {
+        padding: 20px;
+    }
+
+    .black-rhino-information > section,
+    .rhino-information > section,
+    .pangolin-information > section,
+    .red-wolf-information > section,
+    .saola-information > section,
+    .amazon-information > section,
+    .condor-information > section,
+    .kakapo-information > section,
+    .kagu-information > section,
+    .blue-iguana-information > section,
+    .cart-information > section,
+    .dary-snake-information > section,
+    .red-belly-information > section,
+    .axolotl-information > section,
+    .berry-cave-information > section,
+    .gorge-green-information > section,
+    .lemur-leaf-information > section {
+        padding: 18px;
     }
 
 }
