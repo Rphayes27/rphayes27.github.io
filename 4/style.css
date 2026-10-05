@@ -40,7 +40,6 @@ a {
 }
 
 
-/* NAVIGATION */
 
 .navbar {
     width: 100%;
@@ -88,7 +87,6 @@ a {
 }
 
 
-/* DROPDOWNS */
 
 .dropdown {
     position: relative;
@@ -124,7 +122,6 @@ a {
 }
 
 
-/* FOOTER */
 
 footer {
     width: 100%;
@@ -148,10 +145,6 @@ footer a:hover {
     text-decoration: underline;
 }
 
-
-/* =========================================================
-   HOME PAGE
-   ========================================================= */
 
 .home-page {
     background-image:
@@ -235,9 +228,6 @@ footer a:hover {
 }
 
 
-/* =========================================================
-   EXPLORE PAGE
-   ========================================================= */
 
 .choice-information {
     width: min(1100px, 90%);
@@ -311,9 +301,6 @@ footer a:hover {
 }
 
 
-/* =========================================================
-   CATEGORY SELECTION PAGES
-   ========================================================= */
 
 .mammals-page {
     background-color: #f2ece5;
@@ -387,7 +374,6 @@ footer a:hover {
 }
 
 
-/* MAMMAL SELECTION COLORS */
 
 .black-rhino-choice {
     background-color: #bdbdbd;
@@ -406,7 +392,6 @@ footer a:hover {
 }
 
 
-/* BIRD SELECTION COLORS */
 
 .amazon-choice {
     background-color: #9ecda7;
@@ -425,8 +410,6 @@ footer a:hover {
 }
 
 
-/* REPTILE SELECTION COLORS */
-
 .blue-iguana-choice {
     background-color: #9bc7e3;
 }
@@ -444,7 +427,6 @@ footer a:hover {
 }
 
 
-/* AMPHIBIAN SELECTION COLORS */
 
 .axolotl-choice {
     background-color: #efc0d0;
@@ -463,9 +445,6 @@ footer a:hover {
 }
 
 
-/* =========================================================
-   INDIVIDUAL ANIMAL PAGE COLOR PALETTES
-   ========================================================= */
 
 .rhino-page,
 .black-rhino-page {
@@ -581,9 +560,6 @@ footer a:hover {
 }
 
 
-/* =========================================================
-   INDIVIDUAL ANIMAL HERO IMAGES
-   ========================================================= */
 
 .rhino-image-section,
 .pangolin-image-section,
@@ -681,10 +657,6 @@ footer a:hover {
 }
 
 
-/* =========================================================
-   INDIVIDUAL ANIMAL INFORMATION
-   ========================================================= */
-
 .rhino-information,
 .pangolin-information,
 .red-wolf-information,
@@ -706,8 +678,6 @@ footer a:hover {
     padding: 45px 0;
 }
 
-
-/* INTRODUCTION */
 
 .rhino-introduction,
 .pangolin-introduction,
@@ -736,7 +706,6 @@ footer a:hover {
 }
 
 
-/* DESCRIPTION - LEFT */
 
 .rhino-description-card,
 .pangolin-description-card,
@@ -766,7 +735,6 @@ footer a:hover {
 }
 
 
-/* THREATS - RIGHT */
 
 .rhino-threats-card,
 .pangolin-threats-card,
@@ -796,7 +764,6 @@ footer a:hover {
 }
 
 
-/* PROTECTION - LEFT */
 
 .rhino-protection-card,
 .pangolin-protection-card,
@@ -865,9 +832,6 @@ footer a:hover {
 }
 
 
-/* =========================================================
-   SOURCES
-   ========================================================= */
 
 .rhino-sources,
 .pangolin-sources,
@@ -981,9 +945,6 @@ footer a:hover {
 }
 
 
-/* =========================================================
-   CONTACT
-   ========================================================= */
 
 .contact-information {
     width: min(800px, 90%);
@@ -1052,9 +1013,6 @@ footer a:hover {
 }
 
 
-/* =========================================================
-   LOGIN
-   ========================================================= */
 
 .login-information {
     width: min(650px, 90%);
@@ -1119,9 +1077,6 @@ footer a:hover {
 }
 
 
-/* =========================================================
-   TABLETS
-   ========================================================= */
 
 @media (max-width: 950px) {
 
@@ -1144,9 +1099,6 @@ footer a:hover {
 }
 
 
-/* =========================================================
-   MOBILE
-   ========================================================= */
 
 @media (max-width: 700px) {
 
