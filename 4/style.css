@@ -19,7 +19,19 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    background-color: #f7f3ee;
+
+    background-image:
+        linear-gradient(
+            rgba(0, 0, 0, 0.28),
+            rgba(0, 0, 0, 0.28)
+        ),
+        url("img/mainback_nasa.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
     color: #202020;
     line-height: 1.6;
     overflow-x: hidden;
@@ -43,7 +55,7 @@ a {
 .navbar {
     width: 100%;
     min-height: 70px;
-    background-color: #18251c;
+    background-color: #172431;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -82,7 +94,7 @@ a {
 }
 
 .nav-links a:hover {
-    background-color: #344638;
+    background-color: #293d50;
 }
 
 .dropdown {
@@ -95,7 +107,7 @@ a {
     top: 100%;
     left: 0;
     min-width: 240px;
-    background-color: #18251c;
+    background-color: #172431;
     border-radius: 0 0 8px 8px;
     overflow: hidden;
     z-index: 1100;
@@ -112,7 +124,7 @@ a {
 }
 
 .dropdown-content a:hover {
-    background-color: #344638;
+    background-color: #293d50;
 }
 
 .dropdown:hover .dropdown-content {
@@ -121,7 +133,7 @@ a {
 
 footer {
     width: 100%;
-    background-color: #18251c;
+    background-color: #172431;
     color: white;
     text-align: center;
     padding: 20px;
@@ -139,20 +151,6 @@ footer a {
 
 footer a:hover {
     text-decoration: underline;
-}
-
-.home-page {
-    background-image:
-        linear-gradient(
-            rgba(0, 0, 0, 0.42),
-            rgba(0, 0, 0, 0.42)
-        ),
-        url("img/mainback_nasa.jpg");
-
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
 }
 
 .home-information {
@@ -245,8 +243,27 @@ footer a:hover {
 .mammals-page,
 .birds-page,
 .reptiles-page,
-.amphibians-page {
-    background-color: #f7f3ee;
+.amphibians-page,
+.contact-page,
+.login-page,
+.rhino-page,
+.black-rhino-page,
+.pangolin-page,
+.red-wolf-page,
+.saola-page,
+.amazon-page,
+.condor-page,
+.kakapo-page,
+.kagu-page,
+.blue-iguana-page,
+.cart-page,
+.dary-snake-page,
+.red-belly-page,
+.axolotl-page,
+.berry-cave-page,
+.gorge-green-page,
+.lemur-leaf-page {
+    background-color: transparent;
 }
 
 .choice-information,
@@ -262,10 +279,10 @@ footer a:hover {
     max-width: 900px;
     margin: 0 auto 40px;
     padding: 28px 35px;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.94);
     text-align: center;
     border-radius: 18px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.12);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.18);
 }
 
 .choice-introduction h1,
@@ -299,7 +316,7 @@ footer a:hover {
     justify-content: center;
     text-align: center;
     color: #202020;
-    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.16);
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.2);
     transition: transform 0.2s ease,
                 box-shadow 0.2s ease;
 }
@@ -307,7 +324,7 @@ footer a:hover {
 .choice-card:hover,
 .animal-choice-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 9px 18px rgba(0, 0, 0, 0.24);
+    box-shadow: 0 9px 18px rgba(0, 0, 0, 0.28);
 }
 
 .choice-card h2,
@@ -661,7 +678,7 @@ footer a:hover {
     color: #202020;
     text-align: center;
     border-radius: 15px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
 }
 
 .rhino-description-card,
@@ -689,7 +706,7 @@ footer a:hover {
     color: #202020;
     text-align: center;
     border-radius: 18px;
-    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.12);
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.16);
 }
 
 .rhino-threats-card,
@@ -717,7 +734,7 @@ footer a:hover {
     color: #202020;
     text-align: center;
     border-radius: 18px;
-    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.12);
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.16);
 }
 
 .rhino-protection-card,
@@ -745,7 +762,7 @@ footer a:hover {
     color: #202020;
     text-align: center;
     border-radius: 18px;
-    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.12);
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.16);
 }
 
 .rhino-information h2,
@@ -811,7 +828,7 @@ footer a:hover {
     padding-top: 18px;
     background: transparent;
     border: none;
-    border-top: 1px solid #b8b8b8;
+    border-top: 1px solid rgba(255, 255, 255, 0.7);
     border-radius: 0;
     box-shadow: none;
     text-align: center;
@@ -835,8 +852,9 @@ footer a:hover {
 .gorge-green-sources h2,
 .lemur-leaf-sources h2 {
     margin: 0 0 10px;
-    color: #444444;
+    color: white;
     font-size: 1.05rem;
+    text-shadow: 1px 1px 3px black;
 }
 
 .rhino-sources ul,
@@ -902,9 +920,30 @@ footer a:hover {
 .berry-cave-sources a,
 .gorge-green-sources a,
 .lemur-leaf-sources a {
-    color: #3e6249;
+    color: white;
     font-size: 0.9rem;
     overflow-wrap: anywhere;
+    text-shadow: 1px 1px 3px black;
+}
+
+.rhino-sources a:hover,
+.black-rhino-sources a:hover,
+.pangolin-sources a:hover,
+.red-wolf-sources a:hover,
+.saola-sources a:hover,
+.amazon-sources a:hover,
+.condor-sources a:hover,
+.kakapo-sources a:hover,
+.kagu-sources a:hover,
+.blue-iguana-sources a:hover,
+.cart-sources a:hover,
+.dary-snake-sources a:hover,
+.red-belly-sources a:hover,
+.axolotl-sources a:hover,
+.berry-cave-sources a:hover,
+.gorge-green-sources a:hover,
+.lemur-leaf-sources a:hover {
+    color: #b9ddff;
 }
 
 .contact-information {
@@ -914,19 +953,24 @@ footer a:hover {
 }
 
 .contact-introduction {
-    text-align: center;
     margin-bottom: 35px;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.94);
+    text-align: center;
+    border-radius: 18px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.18);
 }
 
 .contact-introduction h1 {
+    margin-top: 0;
     font-size: clamp(2rem, 5vw, 3rem);
 }
 
 .contact-card {
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.95);
     padding: 35px;
     border-radius: 18px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.14);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.18);
 }
 
 .contact-form {
@@ -960,15 +1004,15 @@ footer a:hover {
 .form-group input:focus,
 .form-group select:focus,
 .form-group textarea:focus {
-    outline: 2px solid #55735a;
-    border-color: #55735a;
+    outline: 2px solid #597b9b;
+    border-color: #597b9b;
 }
 
 .contact-button {
     border: none;
     border-radius: 8px;
     padding: 14px 22px;
-    background-color: #75b58a;
+    background-color: #9fc6e8;
     color: #202020;
     font-size: 1rem;
     font-weight: bold;
@@ -976,7 +1020,7 @@ footer a:hover {
 }
 
 .contact-button:hover {
-    background-color: #8bc99d;
+    background-color: #b5d7f2;
 }
 
 .login-information {
@@ -986,26 +1030,31 @@ footer a:hover {
 }
 
 .login-introduction {
-    text-align: center;
     margin-bottom: 30px;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.94);
+    text-align: center;
+    border-radius: 18px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.18);
 }
 
 .login-introduction h1 {
+    margin-top: 0;
     font-size: clamp(2rem, 5vw, 3rem);
 }
 
 .login-notice {
-    background-color: #dbeadf;
+    background-color: #dceaf5;
     padding: 14px;
     border-radius: 8px;
     margin-top: 20px;
 }
 
 .login-card {
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.95);
     padding: 35px;
     border-radius: 18px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.14);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.18);
 }
 
 .login-form {
@@ -1024,7 +1073,7 @@ footer a:hover {
     border: none;
     border-radius: 8px;
     padding: 14px 22px;
-    background-color: #75b58a;
+    background-color: #9fc6e8;
     color: #202020;
     font-size: 1rem;
     font-weight: bold;
@@ -1032,7 +1081,7 @@ footer a:hover {
 }
 
 .login-button:hover {
-    background-color: #8bc99d;
+    background-color: #b5d7f2;
 }
 
 .account-message {
@@ -1042,8 +1091,9 @@ footer a:hover {
 .login-purpose {
     margin-top: 30px;
     padding: 25px;
-    background-color: #dbeadf;
+    background-color: rgba(220, 234, 245, 0.96);
     border-radius: 18px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.14);
 }
 
 @media (max-width: 950px) {
@@ -1067,6 +1117,10 @@ footer a:hover {
 }
 
 @media (max-width: 700px) {
+
+    body {
+        background-attachment: scroll;
+    }
 
     .navbar {
         position: static;
@@ -1098,10 +1152,6 @@ footer a:hover {
 
     .dropdown-content {
         display: none !important;
-    }
-
-    .home-page {
-        background-attachment: scroll;
     }
 
     .home-information {
