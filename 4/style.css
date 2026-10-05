@@ -40,15 +40,16 @@ a {
 }
 
 
+/* NAVIGATION */
 
 .navbar {
     width: 100%;
-    min-height: 75px;
-    background-color: #202820;
+    min-height: 70px;
+    background-color: #18251c;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 15px 35px;
+    padding: 12px 35px;
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -83,8 +84,11 @@ a {
 }
 
 .nav-links a:hover {
-    background-color: #394439;
+    background-color: #344638;
 }
+
+
+/* DROPDOWNS */
 
 .dropdown {
     position: relative;
@@ -95,8 +99,8 @@ a {
     position: absolute;
     top: 100%;
     left: 0;
-    min-width: 240px;
-    background-color: #202820;
+    min-width: 230px;
+    background-color: #18251c;
     border-radius: 0 0 8px 8px;
     overflow: hidden;
     z-index: 1100;
@@ -104,23 +108,27 @@ a {
 }
 
 .dropdown-content a {
+    display: block;
     padding: 12px 16px;
+    color: white;
+    text-decoration: none;
     border-radius: 0;
 }
 
 .dropdown-content a:hover {
-    background-color: #394439;
+    background-color: #344638;
 }
 
-.dropdown:hover .dropdown-content,
-.dropdown:focus-within .dropdown-content {
+.dropdown:hover .dropdown-content {
     display: block;
 }
 
 
+/* FOOTER */
+
 footer {
     width: 100%;
-    background-color: #202820;
+    background-color: #18251c;
     color: white;
     text-align: center;
     padding: 20px;
@@ -141,65 +149,95 @@ footer a:hover {
 }
 
 
+/* =========================================================
+   HOME PAGE
+   ========================================================= */
 
 .home-page {
     background-image:
         linear-gradient(
-            rgba(0, 0, 0, 0.35),
-            rgba(0, 0, 0, 0.35)
+            rgba(0, 0, 0, 0.42),
+            rgba(0, 0, 0, 0.42)
         ),
         url("img/YOUR-BACKGROUND-IMAGE.jpg");
 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    min-height: 100vh;
+    background-attachment: fixed;
 }
 
-.home-content {
-    width: min(1100px, 90%);
+.home-information {
+    width: min(1100px, 92%);
     margin: auto;
-    padding: 70px 0;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 25px;
+    padding: 60px 0;
 }
 
-.home-page h1 {
+.home-hero {
+    min-height: 430px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     color: white;
-    text-shadow: 2px 2px 6px black;
+    padding: 40px 20px;
 }
 
-.home-card,
-.mamm-card,
-.bird-card,
-.rept-card,
-.amph-card {
-    padding: 30px;
+.home-hero h1 {
+    margin: 0 0 20px;
+    font-size: clamp(2.8rem, 7vw, 5rem);
+    line-height: 1.05;
+    color: white;
+    text-shadow: 2px 2px 8px black;
+}
+
+.home-hero p {
+    max-width: 720px;
+    margin: 0 0 30px;
+    font-size: 1.2rem;
+    color: white;
+    text-shadow: 1px 1px 5px black;
+}
+
+.explore-button {
+    display: inline-block;
+    padding: 14px 30px;
+    background-color: #f1e3c6;
+    color: #202020;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+    transition: transform 0.2s ease;
+}
+
+.explore-button:hover {
+    transform: translateY(-3px);
+    background-color: white;
+}
+
+.home-about,
+.home-extinction {
+    max-width: 900px;
+    margin: 45px auto;
+    padding: 35px;
+    background-color: rgba(255, 255, 255, 0.93);
+    color: #202020;
+    text-align: center;
     border-radius: 18px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.22);
+    box-shadow: 0 5px 16px rgba(0, 0, 0, 0.22);
 }
 
-.mamm-card {
-    background-color: rgba(116, 86, 59, 0.93);
-    color: white;
+.home-about h2,
+.home-extinction h2 {
+    margin-top: 0;
 }
 
-.bird-card {
-    background-color: rgba(196, 105, 46, 0.93);
-    color: white;
-}
 
-.rept-card {
-    background-color: rgba(66, 108, 68, 0.93);
-    color: white;
-}
-
-.amph-card {
-    background-color: rgba(63, 112, 145, 0.93);
-    color: white;
-}
-
+/* =========================================================
+   EXPLORE PAGE
+   ========================================================= */
 
 .choice-information {
     width: min(1100px, 90%);
@@ -213,8 +251,8 @@ footer a:hover {
 }
 
 .choice-introduction h1 {
-    font-size: clamp(2rem, 5vw, 3rem);
     margin-bottom: 10px;
+    font-size: clamp(2rem, 5vw, 3rem);
 }
 
 .choice-introduction p {
@@ -236,8 +274,10 @@ footer a:hover {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    color: white;
     box-shadow: 0 5px 12px rgba(0, 0, 0, 0.16);
+    transition: transform 0.2s ease,
+                box-shadow 0.2s ease;
 }
 
 .choice-card:hover {
@@ -256,26 +296,24 @@ footer a:hover {
 
 .mammal-choice {
     background-color: #806044;
-    color: white;
 }
 
 .bird-choice {
-    background-color: #ca702f;
-    color: white;
+    background-color: #c86f35;
 }
 
 .reptile-choice {
-    background-color: #4d7852;
-    color: white;
+    background-color: #4e7852;
 }
 
 .amphibian-choice {
     background-color: #4e7fa0;
-    color: white;
 }
 
 
-/* CATEGORY SELECTION PAGES */
+/* =========================================================
+   CATEGORY SELECTION PAGES
+   ========================================================= */
 
 .mammals-page {
     background-color: #f2ece5;
@@ -305,8 +343,8 @@ footer a:hover {
 }
 
 .category-introduction h1 {
-    font-size: clamp(2rem, 5vw, 3rem);
     margin-bottom: 10px;
+    font-size: clamp(2rem, 5vw, 3rem);
 }
 
 .category-introduction p {
@@ -328,9 +366,11 @@ footer a:hover {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    color: white;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    text-align: center;
+    color: #202020;
     box-shadow: 0 5px 12px rgba(0, 0, 0, 0.16);
+    transition: transform 0.2s ease,
+                box-shadow 0.2s ease;
 }
 
 .animal-choice-card:hover {
@@ -347,195 +387,242 @@ footer a:hover {
 }
 
 
+/* MAMMAL SELECTION COLORS */
 
 .black-rhino-choice {
-    background-color: #565656;
+    background-color: #bdbdbd;
 }
 
 .pangolin-choice {
-    background-color: #896548;
+    background-color: #cfad89;
 }
 
 .red-wolf-choice {
-    background-color: #9d5037;
+    background-color: #d99b79;
 }
 
 .saola-choice {
-    background-color: #687054;
+    background-color: #bdc19f;
 }
 
+
+/* BIRD SELECTION COLORS */
+
 .amazon-choice {
-    background-color: #487f52;
+    background-color: #9ecda7;
 }
 
 .condor-choice {
-    background-color: #4f4f4f;
+    background-color: #bdbdbd;
 }
 
 .kakapo-choice {
-    background-color: #718c48;
+    background-color: #b4cb82;
 }
 
 .kagu-choice {
-    background-color: #c87342;
+    background-color: #e0a078;
 }
 
+
+/* REPTILE SELECTION COLORS */
+
 .blue-iguana-choice {
-    background-color: #477ba9;
+    background-color: #9bc7e3;
 }
 
 .cart-choice {
-    background-color: #527c68;
+    background-color: #a9c9b6;
 }
 
 .dary-snake-choice {
-    background-color: #746049;
+    background-color: #c9b299;
 }
 
 .red-belly-choice {
-    background-color: #94564c;
+    background-color: #d6a29b;
 }
 
+
+/* AMPHIBIAN SELECTION COLORS */
+
 .axolotl-choice {
-    background-color: #bb6f8a;
+    background-color: #efc0d0;
 }
 
 .berry-cave-choice {
-    background-color: #aa716b;
+    background-color: #e5b7af;
 }
 
 .gorge-green-choice {
-    background-color: #5e7249;
+    background-color: #c2ce95;
 }
 
 .lemur-leaf-choice {
-    background-color: #608c4b;
+    background-color: #b6d58d;
 }
 
 
-/* ANIMAL PAGE COLOR PALETTES */
+/* =========================================================
+   INDIVIDUAL ANIMAL PAGE COLOR PALETTES
+   ========================================================= */
 
-.rhino-page {
-    --card-one: #d7d5d1;
-    --card-two: #b9b4ae;
-    --card-three: #e1d5c5;
-    --card-four: #c7b9a5;
+.rhino-page,
+.black-rhino-page {
+    --intro-color: #f0efed;
+    --description-color: #d7d5d1;
+    --threats-color: #bebbb6;
+    --protection-color: #ded4c7;
 }
 
 .pangolin-page {
-    --card-one: #eadac8;
-    --card-two: #d9bea0;
-    --card-three: #c9a987;
-    --card-four: #ead2b8;
+    --intro-color: #f3ebe3;
+    --description-color: #eadac8;
+    --threats-color: #d6b999;
+    --protection-color: #e5cdb2;
 }
 
 .red-wolf-page {
-    --card-one: #ead0be;
-    --card-two: #dda487;
-    --card-three: #c98a6c;
-    --card-four: #e4b89e;
+    --intro-color: #f4e8e0;
+    --description-color: #ead0be;
+    --threats-color: #d9a187;
+    --protection-color: #e5bba2;
 }
 
 .saola-page {
-    --card-one: #e5dfce;
-    --card-two: #ccd0b5;
-    --card-three: #b5bd99;
-    --card-four: #d8c9ae;
+    --intro-color: #f1eee5;
+    --description-color: #e5dfce;
+    --threats-color: #c9ceb0;
+    --protection-color: #d9cbb2;
 }
 
 .amazon-page {
-    --card-one: #e2efd4;
-    --card-two: #bcdcae;
-    --card-three: #edbbb7;
-    --card-four: #d5e5bd;
+    --intro-color: #edf4e8;
+    --description-color: #d8eacb;
+    --threats-color: #ecc6c2;
+    --protection-color: #d1e2bc;
 }
 
 .condor-page {
-    --card-one: #e4e4e4;
-    --card-two: #cacaca;
-    --card-three: #d7b7aa;
-    --card-four: #e4d2c8;
+    --intro-color: #eeeeee;
+    --description-color: #dddddd;
+    --threats-color: #c7c7c7;
+    --protection-color: #dfc8bd;
 }
 
 .kakapo-page {
-    --card-one: #e5edcf;
-    --card-two: #cad99f;
-    --card-three: #b1c486;
-    --card-four: #d7e1b5;
+    --intro-color: #eef2e4;
+    --description-color: #dfe8c5;
+    --threats-color: #c7d69d;
+    --protection-color: #d7e1b5;
 }
 
 .kagu-page {
-    --card-one: #ecece8;
-    --card-two: #efd0bd;
-    --card-three: #dfad8e;
-    --card-four: #d5d8da;
+    --intro-color: #f1efec;
+    --description-color: #e4e4df;
+    --threats-color: #e6bea5;
+    --protection-color: #d6d9db;
 }
 
 .blue-iguana-page {
-    --card-one: #dbeaf5;
-    --card-two: #bdd9ec;
-    --card-three: #9dc5df;
-    --card-four: #c7deec;
+    --intro-color: #edf5fa;
+    --description-color: #dbeaf5;
+    --threats-color: #bad8eb;
+    --protection-color: #c9e0ee;
 }
 
 .cart-page {
-    --card-one: #e1eadc;
-    --card-two: #c9dac1;
-    --card-three: #abc5b1;
-    --card-four: #d5e2d2;
+    --intro-color: #edf3e9;
+    --description-color: #dfe9da;
+    --threats-color: #bfd2c1;
+    --protection-color: #d4e1d0;
 }
 
 .dary-snake-page {
-    --card-one: #e8dfd2;
-    --card-two: #d3c1aa;
-    --card-three: #baa286;
-    --card-four: #ddd0be;
+    --intro-color: #f2eee8;
+    --description-color: #e8dfd2;
+    --threats-color: #d5c2aa;
+    --protection-color: #dfd1bf;
 }
 
 .red-belly-page {
-    --card-one: #ead2cd;
-    --card-two: #d9ada5;
-    --card-three: #c98f84;
-    --card-four: #e2beb7;
+    --intro-color: #f4e9e7;
+    --description-color: #ead2cd;
+    --threats-color: #d8aaa1;
+    --protection-color: #e3beb7;
 }
 
 .axolotl-page {
-    --card-one: #f7e2e9;
-    --card-two: #efc8d5;
-    --card-three: #dfa9ba;
-    --card-four: #f1d3dd;
+    --intro-color: #fbf0f4;
+    --description-color: #f7e2e9;
+    --threats-color: #eec4d2;
+    --protection-color: #f0d2dc;
 }
 
 .berry-cave-page {
-    --card-one: #f4dfda;
-    --card-two: #e8c2ba;
-    --card-three: #dca49b;
-    --card-four: #efd1ca;
+    --intro-color: #f9efec;
+    --description-color: #f3ded9;
+    --threats-color: #e7beb6;
+    --protection-color: #efd1ca;
 }
 
 .gorge-green-page {
-    --card-one: #e5e8d2;
-    --card-two: #ced5aa;
-    --card-three: #b5c087;
-    --card-four: #d9dfbd;
+    --intro-color: #f0f2e8;
+    --description-color: #e5e8d2;
+    --threats-color: #ccd5a7;
+    --protection-color: #d9dfbd;
 }
 
 .lemur-leaf-page {
-    --card-one: #eaf2cf;
-    --card-two: #d5e8a9;
-    --card-three: #b7d486;
-    --card-four: #dcebbd;
+    --intro-color: #f1f5e6;
+    --description-color: #e8f0ce;
+    --threats-color: #d2e5a7;
+    --protection-color: #dcebbc;
 }
 
 
-section[class$="-image-section"] {
+/* =========================================================
+   INDIVIDUAL ANIMAL HERO IMAGES
+   ========================================================= */
+
+.rhino-image-section,
+.pangolin-image-section,
+.red-wolf-image-section,
+.saola-image-section,
+.amazon-image-section,
+.condor-image-section,
+.kakapo-image-section,
+.kagu-image-section,
+.blue-iguana-image-section,
+.cart-image-section,
+.dary-snake-image-section,
+.red-belly-image-section,
+.axolotl-image-section,
+.berry-cave-image-section,
+.gorge-green-image-section,
+.lemur-leaf-image-section {
     width: 100%;
-    height: clamp(230px, 30vw, 360px);
+    height: 360px;
     position: relative;
     overflow: hidden;
 }
 
-img[class$="-image"] {
+.rhino-image,
+.pangolin-image,
+.red-wolf-image,
+.saola-image,
+.amazon-image,
+.condor-image,
+.kakapo-image,
+.kagu-image,
+.blue-iguana-image,
+.cart-image,
+.dary-snake-image,
+.red-belly-image,
+.axolotl-image,
+.berry-cave-image,
+.gorge-green-image,
+.lemur-leaf-image {
     width: 100%;
     height: 100%;
     display: block;
@@ -543,7 +630,22 @@ img[class$="-image"] {
     object-position: center;
 }
 
-div[class$="-title"] {
+.rhino-title,
+.pangolin-title,
+.red-wolf-title,
+.saola-title,
+.amazon-title,
+.condor-title,
+.kakapo-title,
+.kagu-title,
+.blue-iguana-title,
+.cart-title,
+.dary-snake-title,
+.red-belly-title,
+.axolotl-title,
+.berry-cave-title,
+.gorge-green-title,
+.lemur-leaf-title {
     position: absolute;
     inset: 0;
     display: flex;
@@ -551,122 +653,337 @@ div[class$="-title"] {
     justify-content: center;
     text-align: center;
     padding: 20px;
-    background-color: rgba(0, 0, 0, 0.25);
+    background-color: rgba(0, 0, 0, 0.22);
 }
 
-div[class$="-title"] h1 {
-    color: white;
-    font-size: clamp(2rem, 5vw, 4rem);
-    line-height: 1.15;
-    text-shadow: 2px 2px 7px black;
+.rhino-title h1,
+.pangolin-title h1,
+.red-wolf-title h1,
+.saola-title h1,
+.amazon-title h1,
+.condor-title h1,
+.kakapo-title h1,
+.kagu-title h1,
+.blue-iguana-title h1,
+.cart-title h1,
+.dary-snake-title h1,
+.red-belly-title h1,
+.axolotl-title h1,
+.berry-cave-title h1,
+.gorge-green-title h1,
+.lemur-leaf-title h1 {
     margin: 0;
     max-width: 95%;
+    color: white;
+    font-size: clamp(2.2rem, 5vw, 4rem);
+    line-height: 1.15;
+    text-shadow: 2px 2px 7px black;
 }
 
 
+/* =========================================================
+   INDIVIDUAL ANIMAL INFORMATION
+   ========================================================= */
 
-main[class$="-information"] {
+.rhino-information,
+.pangolin-information,
+.red-wolf-information,
+.saola-information,
+.amazon-information,
+.condor-information,
+.kakapo-information,
+.kagu-information,
+.blue-iguana-information,
+.cart-information,
+.dary-snake-information,
+.red-belly-information,
+.axolotl-information,
+.berry-cave-information,
+.gorge-green-information,
+.lemur-leaf-information {
     width: min(1100px, 92%);
     margin: auto;
     padding: 45px 0;
 }
 
 
-main[class$="-information"] > section:not([class$="-sources"]) {
-    width: 78%;
-    max-width: 850px;
-    padding: 28px 32px;
-    margin-bottom: 30px;
-    border-radius: 18px;
-    color: #202020;
+/* INTRODUCTION */
+
+.rhino-introduction,
+.pangolin-introduction,
+.red-wolf-introduction,
+.saola-introduction,
+.amazon-introduction,
+.condor-introduction,
+.kakapo-introduction,
+.kagu-introduction,
+.blue-iguana-introduction,
+.cart-introduction,
+.dary-snake-introduction,
+.red-belly-introduction,
+.axolotl-introduction,
+.berry-cave-introduction,
+.gorge-green-introduction,
+.lemur-leaf-introduction {
+    width: 85%;
+    margin: 0 auto 45px;
+    padding: 24px 30px;
     text-align: center;
+    background-color: var(--intro-color);
+    color: #202020;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+
+/* DESCRIPTION - LEFT */
+
+.rhino-description-card,
+.pangolin-description-card,
+.red-wolf-description-card,
+.saola-description-card,
+.amazon-description-card,
+.condor-description-card,
+.kakapo-description-card,
+.kagu-description-card,
+.blue-iguana-description-card,
+.cart-description-card,
+.dary-snake-description-card,
+.red-belly-description-card,
+.axolotl-description-card,
+.berry-cave-description-card,
+.gorge-green-description-card,
+.lemur-leaf-description-card {
+    width: 75%;
+    max-width: 850px;
+    margin: 0 auto 35px 0;
+    padding: 30px;
+    text-align: center;
+    background-color: var(--description-color);
+    color: #202020;
+    border-radius: 18px;
     box-shadow: 0 5px 12px rgba(0, 0, 0, 0.12);
 }
 
 
-main[class$="-information"] > section:nth-of-type(1) {
-    margin-right: auto;
-    margin-left: 0;
-    background-color: var(--card-one, #eeeeee);
+/* THREATS - RIGHT */
+
+.rhino-threats-card,
+.pangolin-threats-card,
+.red-wolf-threats-card,
+.saola-threats-card,
+.amazon-threats-card,
+.condor-threats-card,
+.kakapo-threats-card,
+.kagu-threats-card,
+.blue-iguana-threats-card,
+.cart-threats-card,
+.dary-snake-threats-card,
+.red-belly-threats-card,
+.axolotl-threats-card,
+.berry-cave-threats-card,
+.gorge-green-threats-card,
+.lemur-leaf-threats-card {
+    width: 75%;
+    max-width: 850px;
+    margin: 0 0 35px auto;
+    padding: 30px;
+    text-align: center;
+    background-color: var(--threats-color);
+    color: #202020;
+    border-radius: 18px;
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.12);
 }
 
 
+/* PROTECTION - LEFT */
 
-main[class$="-information"] > section:nth-of-type(2) {
-    margin-left: auto;
-    margin-right: 0;
-    background-color: var(--card-two, #dddddd);
+.rhino-protection-card,
+.pangolin-protection-card,
+.red-wolf-protection-card,
+.saola-protection-card,
+.amazon-protection-card,
+.condor-protection-card,
+.kakapo-protection-card,
+.kagu-protection-card,
+.blue-iguana-protection-card,
+.cart-protection-card,
+.dary-snake-protection-card,
+.red-belly-protection-card,
+.axolotl-protection-card,
+.berry-cave-protection-card,
+.gorge-green-protection-card,
+.lemur-leaf-protection-card {
+    width: 75%;
+    max-width: 850px;
+    margin: 0 auto 35px 0;
+    padding: 30px;
+    text-align: center;
+    background-color: var(--protection-color);
+    color: #202020;
+    border-radius: 18px;
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.12);
 }
 
-
-
-main[class$="-information"] > section:nth-of-type(3) {
-    margin-right: auto;
-    margin-left: 0;
-    background-color: var(--card-three, #cccccc);
-}
-
-
-
-main[class$="-information"] > section:nth-of-type(4) {
-    margin-left: auto;
-    margin-right: 0;
-    background-color: var(--card-four, #dddddd);
-}
-
-main[class$="-information"] h2 {
+.rhino-information h2,
+.pangolin-information h2,
+.red-wolf-information h2,
+.saola-information h2,
+.amazon-information h2,
+.condor-information h2,
+.kakapo-information h2,
+.kagu-information h2,
+.blue-iguana-information h2,
+.cart-information h2,
+.dary-snake-information h2,
+.red-belly-information h2,
+.axolotl-information h2,
+.berry-cave-information h2,
+.gorge-green-information h2,
+.lemur-leaf-information h2 {
+    color: #202020;
     margin-top: 0;
+}
+
+.rhino-information p,
+.pangolin-information p,
+.red-wolf-information p,
+.saola-information p,
+.amazon-information p,
+.condor-information p,
+.kakapo-information p,
+.kagu-information p,
+.blue-iguana-information p,
+.cart-information p,
+.dary-snake-information p,
+.red-belly-information p,
+.axolotl-information p,
+.berry-cave-information p,
+.gorge-green-information p,
+.lemur-leaf-information p {
     color: #202020;
 }
 
-main[class$="-information"] p {
-    color: #202020;
-}
 
+/* =========================================================
+   SOURCES
+   ========================================================= */
 
-
-main[class$="-information"] > section[class$="-sources"] {
+.rhino-sources,
+.pangolin-sources,
+.red-wolf-sources,
+.saola-sources,
+.amazon-sources,
+.condor-sources,
+.kakapo-sources,
+.kagu-sources,
+.blue-iguana-sources,
+.cart-sources,
+.dary-snake-sources,
+.red-belly-sources,
+.axolotl-sources,
+.berry-cave-sources,
+.gorge-green-sources,
+.lemur-leaf-sources {
     width: 100%;
-    margin-top: 75px;
-    padding: 25px 0 0;
-    background-color: transparent;
-    box-shadow: none;
+    margin-top: 80px;
+    padding-top: 20px;
+    background: transparent;
     border-radius: 0;
+    box-shadow: none;
     border-top: 1px solid #b8b8b8;
+    text-align: left;
+}
+
+.rhino-sources h2,
+.pangolin-sources h2,
+.red-wolf-sources h2,
+.saola-sources h2,
+.amazon-sources h2,
+.condor-sources h2,
+.kakapo-sources h2,
+.kagu-sources h2,
+.blue-iguana-sources h2,
+.cart-sources h2,
+.dary-snake-sources h2,
+.red-belly-sources h2,
+.axolotl-sources h2,
+.berry-cave-sources h2,
+.gorge-green-sources h2,
+.lemur-leaf-sources h2 {
+    margin: 0 0 10px;
+    font-size: 1.1rem;
     color: #444444;
 }
 
-section[class$="-sources"] h2 {
-    margin: 0 0 12px;
-    font-size: 1.1rem;
-    color: #555555;
-}
-
-section[class$="-sources"] ul {
+.rhino-sources ul,
+.pangolin-sources ul,
+.red-wolf-sources ul,
+.saola-sources ul,
+.amazon-sources ul,
+.condor-sources ul,
+.kakapo-sources ul,
+.kagu-sources ul,
+.blue-iguana-sources ul,
+.cart-sources ul,
+.dary-snake-sources ul,
+.red-belly-sources ul,
+.axolotl-sources ul,
+.berry-cave-sources ul,
+.gorge-green-sources ul,
+.lemur-leaf-sources ul {
     list-style: none;
     display: flex;
     flex-wrap: wrap;
-    gap: 8px 22px;
+    gap: 8px 25px;
     margin: 0;
     padding: 0;
 }
 
-section[class$="-sources"] li {
+.rhino-sources li,
+.pangolin-sources li,
+.red-wolf-sources li,
+.saola-sources li,
+.amazon-sources li,
+.condor-sources li,
+.kakapo-sources li,
+.kagu-sources li,
+.blue-iguana-sources li,
+.cart-sources li,
+.dary-snake-sources li,
+.red-belly-sources li,
+.axolotl-sources li,
+.berry-cave-sources li,
+.gorge-green-sources li,
+.lemur-leaf-sources li {
     margin: 0;
-    padding: 0;
 }
 
-section[class$="-sources"] a {
+.rhino-sources a,
+.pangolin-sources a,
+.red-wolf-sources a,
+.saola-sources a,
+.amazon-sources a,
+.condor-sources a,
+.kakapo-sources a,
+.kagu-sources a,
+.blue-iguana-sources a,
+.cart-sources a,
+.dary-snake-sources a,
+.red-belly-sources a,
+.axolotl-sources a,
+.berry-cave-sources a,
+.gorge-green-sources a,
+.lemur-leaf-sources a {
     color: #425b47;
     font-size: 0.9rem;
-    text-decoration: underline;
     overflow-wrap: anywhere;
 }
 
-section[class$="-sources"] a:hover {
-    color: #223c29;
-}
 
+/* =========================================================
+   CONTACT
+   ========================================================= */
 
 .contact-information {
     width: min(800px, 90%);
@@ -681,7 +998,6 @@ section[class$="-sources"] a:hover {
 
 .contact-introduction h1 {
     font-size: clamp(2rem, 5vw, 3rem);
-    margin-bottom: 10px;
 }
 
 .contact-card {
@@ -735,10 +1051,10 @@ section[class$="-sources"] a:hover {
     cursor: pointer;
 }
 
-.contact-button:hover {
-    background-color: #38533d;
-}
 
+/* =========================================================
+   LOGIN
+   ========================================================= */
 
 .login-information {
     width: min(650px, 90%);
@@ -753,7 +1069,6 @@ section[class$="-sources"] a:hover {
 
 .login-introduction h1 {
     font-size: clamp(2rem, 5vw, 3rem);
-    margin-bottom: 10px;
 }
 
 .login-notice {
@@ -782,10 +1097,6 @@ section[class$="-sources"] a:hover {
     gap: 8px;
 }
 
-.remember-me input {
-    width: auto;
-}
-
 .login-button {
     border: none;
     border-radius: 8px;
@@ -796,27 +1107,21 @@ section[class$="-sources"] a:hover {
     cursor: pointer;
 }
 
-.login-button:hover {
-    background-color: #38533d;
-}
-
 .account-message {
     text-align: center;
-    font-size: 0.9rem;
-    margin: 0;
 }
 
 .login-purpose {
     margin-top: 30px;
-    background-color: #e8eee5;
     padding: 25px;
+    background-color: #e8eee5;
     border-radius: 18px;
 }
 
-.login-purpose h2 {
-    margin-top: 0;
-}
 
+/* =========================================================
+   TABLETS
+   ========================================================= */
 
 @media (max-width: 950px) {
 
@@ -831,7 +1136,6 @@ section[class$="-sources"] a:hover {
         flex-wrap: wrap;
     }
 
-    .home-content,
     .choice-cards,
     .animal-choice-cards {
         grid-template-columns: 1fr;
@@ -840,6 +1144,9 @@ section[class$="-sources"] a:hover {
 }
 
 
+/* =========================================================
+   MOBILE
+   ========================================================= */
 
 @media (max-width: 700px) {
 
@@ -869,37 +1176,28 @@ section[class$="-sources"] a:hover {
         width: 100%;
         text-align: center;
         padding: 9px;
-        font-size: 0.85rem;
     }
 
     .dropdown-content {
         display: none !important;
     }
 
-    section[class$="-image-section"] {
-        height: 240px;
+    .home-page {
+        background-attachment: scroll;
     }
 
-    main[class$="-information"] {
+    .home-information {
         width: 92%;
-        padding: 25px 0;
+        padding: 30px 0;
     }
 
-    main[class$="-information"] > section:not([class$="-sources"]) {
-        width: 100%;
-        max-width: none;
-        margin-left: 0;
-        margin-right: 0;
-        padding: 22px;
+    .home-hero {
+        min-height: 350px;
     }
 
-    main[class$="-information"] > section[class$="-sources"] {
-        margin-top: 50px;
-    }
-
-    section[class$="-sources"] ul {
-        flex-direction: column;
-        gap: 8px;
+    .home-about,
+    .home-extinction {
+        padding: 25px;
     }
 
     .choice-information,
@@ -916,36 +1214,137 @@ section[class$="-sources"] a:hover {
         padding: 25px;
     }
 
-    .contact-card,
-    .login-card {
-        padding: 25px;
+    .rhino-image-section,
+    .pangolin-image-section,
+    .red-wolf-image-section,
+    .saola-image-section,
+    .amazon-image-section,
+    .condor-image-section,
+    .kakapo-image-section,
+    .kagu-image-section,
+    .blue-iguana-image-section,
+    .cart-image-section,
+    .dary-snake-image-section,
+    .red-belly-image-section,
+    .axolotl-image-section,
+    .berry-cave-image-section,
+    .gorge-green-image-section,
+    .lemur-leaf-image-section {
+        height: 240px;
     }
 
-    .home-content {
+    .rhino-information,
+    .pangolin-information,
+    .red-wolf-information,
+    .saola-information,
+    .amazon-information,
+    .condor-information,
+    .kakapo-information,
+    .kagu-information,
+    .blue-iguana-information,
+    .cart-information,
+    .dary-snake-information,
+    .red-belly-information,
+    .axolotl-information,
+    .berry-cave-information,
+    .gorge-green-information,
+    .lemur-leaf-information {
         width: 92%;
-        padding: 35px 0;
+        padding: 25px 0;
     }
 
-}
+    .rhino-introduction,
+    .pangolin-introduction,
+    .red-wolf-introduction,
+    .saola-introduction,
+    .amazon-introduction,
+    .condor-introduction,
+    .kakapo-introduction,
+    .kagu-introduction,
+    .blue-iguana-introduction,
+    .cart-introduction,
+    .dary-snake-introduction,
+    .red-belly-introduction,
+    .axolotl-introduction,
+    .berry-cave-introduction,
+    .gorge-green-introduction,
+    .lemur-leaf-introduction,
 
+    .rhino-description-card,
+    .pangolin-description-card,
+    .red-wolf-description-card,
+    .saola-description-card,
+    .amazon-description-card,
+    .condor-description-card,
+    .kakapo-description-card,
+    .kagu-description-card,
+    .blue-iguana-description-card,
+    .cart-description-card,
+    .dary-snake-description-card,
+    .red-belly-description-card,
+    .axolotl-description-card,
+    .berry-cave-description-card,
+    .gorge-green-description-card,
+    .lemur-leaf-description-card,
 
-@media (max-width: 430px) {
+    .rhino-threats-card,
+    .pangolin-threats-card,
+    .red-wolf-threats-card,
+    .saola-threats-card,
+    .amazon-threats-card,
+    .condor-threats-card,
+    .kakapo-threats-card,
+    .kagu-threats-card,
+    .blue-iguana-threats-card,
+    .cart-threats-card,
+    .dary-snake-threats-card,
+    .red-belly-threats-card,
+    .axolotl-threats-card,
+    .berry-cave-threats-card,
+    .gorge-green-threats-card,
+    .lemur-leaf-threats-card,
 
-    body {
-        font-size: 0.9rem;
+    .rhino-protection-card,
+    .pangolin-protection-card,
+    .red-wolf-protection-card,
+    .saola-protection-card,
+    .amazon-protection-card,
+    .condor-protection-card,
+    .kakapo-protection-card,
+    .kagu-protection-card,
+    .blue-iguana-protection-card,
+    .cart-protection-card,
+    .dary-snake-protection-card,
+    .red-belly-protection-card,
+    .axolotl-protection-card,
+    .berry-cave-protection-card,
+    .gorge-green-protection-card,
+    .lemur-leaf-protection-card {
+        width: 100%;
+        max-width: none;
+        margin-left: 0;
+        margin-right: 0;
+        padding: 22px;
     }
 
-    section[class$="-image-section"] {
-        height: 210px;
-    }
-
-    .choice-card,
-    .animal-choice-card {
-        padding: 20px;
-    }
-
-    main[class$="-information"] > section:not([class$="-sources"]) {
-        padding: 18px;
+    .rhino-sources ul,
+    .pangolin-sources ul,
+    .red-wolf-sources ul,
+    .saola-sources ul,
+    .amazon-sources ul,
+    .condor-sources ul,
+    .kakapo-sources ul,
+    .kagu-sources ul,
+    .blue-iguana-sources ul,
+    .cart-sources ul,
+    .dary-snake-sources ul,
+    .red-belly-sources ul,
+    .axolotl-sources ul,
+    .berry-cave-sources ul,
+    .gorge-green-sources ul,
+    .lemur-leaf-sources ul {
+        flex-direction: column;
+        gap: 8px;
     }
 
 }
