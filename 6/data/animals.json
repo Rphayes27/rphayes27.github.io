@@ -1,0 +1,668 @@
+{
+  "animals": [
+    {
+      "id": "black-rhino",
+      "name": "Black Rhino",
+      "category": "Mammals",
+      "image": "img/black rhino david-clode.jpg",
+      "imageAlt": "Black Rhino",
+      "theme": "rhino-page",
+      "teaser": "Click here to learn more about the endangered Black Rhino.",
+      "introduction": "<p>\n                Black Rhinos, otherwise known by their scientific name, “Diceros bicornis,” are one \n                of two species of rhinoceros native to Africa. With a population of fewer than 7,000 \n                individuals, they are currently classified as critically endangered.\n            </p>",
+      "sections": [
+        {
+          "heading": "Description",
+          "html": "<p>\n                Black Rhinos have grey skin and are recognizable by their hooked upper lips, \n                which they use to grab leaves and twigs while feeding. They typically weigh \n                between 1,760 and 3,080 pounds and stand between 4.5 and 6 feet tall. Their \n                average lifespan ranges between 40 and 50 years. Black Rhinos are primarily \n                solitary animals and rely heavily on their strong senses of smell and hearing \n                due to their relatively poor eyesight. They have two horns, with the front horn \n                generally being larger than the rear horn. Their horns continuously grow \n                throughout their lives and are used for protection, dominance, and digging.\n            </p>"
+        },
+        {
+          "heading": "Threats",
+          "html": "<p>\n                Poaching is the greatest threat facing Black Rhinos. Their horns are made of \n                keratin, the same material found in human hair and fingernails, but they are still \n                highly sought after for use in traditional medicines and ornamental products. \n                This demand has caused Black Rhinos to be illegally hunted and killed throughout their natural range.\n            </p>"
+        },
+        {
+          "heading": "Protection",
+          "html": "<p>\n                Black Rhinos play an important ecological role within their habitats and also \n                contribute to local economies through wildlife tourism. Conservation efforts include\n                laws designed to prevent poaching and illegal wildlife trade, along with increased\n                monitoring at borders and ports to prevent rhino horns from being transported and sold.\n            </p>"
+        }
+      ],
+      "sources": [
+        {
+          "name": "World Wildlife Fund - Black Rhino",
+          "url": "https://www.worldwildlife.org/species/black-rhino/"
+        },
+        {
+          "name": "National Geographic - Black Rhinoceros",
+          "url": "https://www.nationalgeographic.com/animals/mammals/facts/black-rhinoceros"
+        },
+        {
+          "name": "Sheldrick Wildlife Trust - Black Rhino",
+          "url": "https://www.sheldrickwildlifetrust.org/about/species-we-protect-black-rhino"
+        }
+      ],
+      "colors": {
+        "intro": "#f1efec",
+        "description": "#d7d1e3",
+        "threats": "#c7d9c5",
+        "protection": "#e7d0a8"
+      }
+    },
+    {
+      "id": "ground-pangolin",
+      "name": "Ground Pangolin",
+      "category": "Mammals",
+      "image": "img/studio-crevettes-pangolin.jpg",
+      "imageAlt": "Ground Pangolin",
+      "theme": "pangolin-page",
+      "teaser": "Click here to learn more about the endangered Ground Pangolin.",
+      "introduction": "<p>\n                Ground Pangolins, also known as Temminck’s Pangolins or by their scientific name, “Smutsia temminckii,”\n                are one of the 4 species of Pangolins found throughout Africa. While the exact population of these mammals\n                is unknown, they are classified as a vulnerable species as their population is steadily declining.\n            </p>",
+      "sections": [
+        {
+          "heading": "Description",
+          "html": "<p>\n                Despite their reptile-like appearance, Ground Pangolins are unique types of mammals that sport\n                keratin scales all over their bodies. Often weighing somewhere between 11 and 42 pounds, these\n                scales take up about 20% of the Pangolins’ total body weight. They are used for protection as, \n                when threatened, Pangolins will curl their bodies into a tight ball to expose their sharp scales \n                to attackers. They typically live inside burrows created by other animals. They are also solitary \n                and nocturnal creatures, staying inside until nightfall when they emerge to hunt for food. \n                Ground Pangolins primarily feed on ants and termites, which they find using their keen sense of \n                smell. They also walk on their hind legs, using their muscular forelimbs and central claws to break \n                into insect colonies. They have long tongues similar to that of an anteater to collect food. \n                Pangolins have no teeth and instead break down their food by swallowing small pieces of rock \n                which aid in digestion.\n            </p>"
+        },
+        {
+          "heading": "Threats",
+          "html": "<p>\n                Pangolins are the most trafficked mammals in the world. They are targets for illegal hunting \n                and poaching as their scales are highly sought after for traditional medicinal practices and \n                their meat is considered a delicacy in certain areas. Their skin is also used to create \n                leather products such as purses, boots, and belts. Since a Ground Pangolin’s main defense \n                is to curl up into a ball, they are also easy for humans to capture, and the continued \n                demand for their scales and meat results in a steady decline in their population.\n            </p>"
+        },
+        {
+          "heading": "Protection",
+          "html": "<p>\n                Pangolins are protected under both national and international laws, which include bans \n                on international commercial trade. Conservation organizations also work to protect these \n                creatures, one such organization being the African Wildlife Foundation. One way they \n                work to decrease Pangolin trafficking is by educating consumers on the absence of true \n                medicinal properties regarding their scales. They also work with local communities to \n                reduce the hunting of threatened wildlife and use detection dogs to locate illegally \n                trafficked wildlife products.\n            </p>"
+        }
+      ],
+      "sources": [
+        {
+          "name": "African Wildlife Foundation - Pangolin",
+          "url": "https://www.awf.org/wildlife-conservation/pangolin"
+        },
+        {
+          "name": "World Wildlife Fund - Pangolin",
+          "url": "https://www.worldwildlife.org/species/pangolin/"
+        },
+        {
+          "name": "IUCN SSC Pangolin Specialist Group - Temminck's Pangolin",
+          "url": "https://pangolinsg.org/portfolio/temmincks-pangolin/"
+        },
+        {
+          "name": "iNaturalist - Smutsia temminckii",
+          "url": "https://www.inaturalist.org/taxa/75083-Smutsia-temminckii"
+        }
+      ],
+      "colors": {
+        "intro": "#f4eee5",
+        "description": "#e3bd83",
+        "threats": "#c6d99e",
+        "protection": "#efd28b"
+      }
+    },
+    {
+      "id": "red-wolves",
+      "name": "Red Wolves",
+      "category": "Mammals",
+      "image": "img/unknown-unnamed-red wolf.jpg",
+      "imageAlt": "Red Wolf",
+      "theme": "red-wolf-page",
+      "teaser": "Click here to learn more about the endangered Red Wolf.",
+      "introduction": "<p>\n                Red Wolves are one of the two species of wolves living\n                in North America. Otherwise known by their scientific\n                name <em>Canis Rufus</em>, these wolves are protected\n                as they are critically endangered, with only around 25\n                Red Wolves still roaming free in North Carolina.\n            </p>",
+      "sections": [
+        {
+          "heading": "Description",
+          "html": "<p>\n                Relative to Grey Wolves, Red Wolves are recognized by the\n                characteristic red fur found on their bodies. They sit at\n                a weight of between 45-80 pounds and stand a little over\n                2 feet tall. The average lifespan for Red Wolves are\n                between 6 and 7 years.\n                They are most active at dusk and dawn, and maintain\n                primarily carnivorous diets, preying on deer and small\n                mammals. Though, they’ve also been known to eat berries\n                and insects. Red wolves often den in hollow trees, stream\n                banks and sand knolls.\n                Like many other wolf species, Red Wolves are very social\n                animals, using scent marking, facial expressions, body\n                language, and vocalizations, such as howling, to\n                communicate with other wolves. They typically reside in\n                packs of five to eight other wolves. This pack consists\n                of a breeding male and female, as they are known to form\n                lifelong pair-bonds, as well as their resulting offspring.\n            </p>"
+        },
+        {
+          "heading": "Threats",
+          "html": "<p>\n                While Red Wolves formerly roamed in many different regions\n                such as Texas, Florida and other Midwestern states, they\n                now reside exclusively on the Albemarle Peninsula in North\n                Carolina.\n                Habitat degradation, illegal poaching and vehicle\n                collisions are the main reasons behind these wolves’\n                depleted population.\n            </p>"
+        },
+        {
+          "heading": "Protection",
+          "html": "<p>\n                There are many wildlife conservation organizations\n                dedicated to preserving and restoring the Red Wolf\n                population. “The Defenders of Wildlife” is one such\n                organization.\n                They lead in outreach efforts to increase awareness of\n                Red Wolves and have previously engaged in lawsuits to\n                force the FWS (U.S. Fish and Wildlife Service) to protect\n                them. Red Wolves have also been bred in captivity and\n                released into the wild to further improve their numbers\n                and chances of survival.\n            </p>"
+        }
+      ],
+      "sources": [
+        {
+          "name": "Defenders of Wildlife - Red Wolf",
+          "url": "https://defenders.org/wildlife/red-wolf"
+        },
+        {
+          "name": "Wolf Conservation Center - Red Wolf",
+          "url": "https://nywolf.org/learn/red-wolf/"
+        }
+      ],
+      "colors": {
+        "intro": "#f5ebe4",
+        "description": "#efb79c",
+        "threats": "#e99b82",
+        "protection": "#efd27f"
+      }
+    },
+    {
+      "id": "saola",
+      "name": "Saola",
+      "category": "Mammals",
+      "image": "img/pexels-nihongraphy-saolas.jpg",
+      "imageAlt": "Saola",
+      "theme": "saola-page",
+      "teaser": "Click here to learn more about the endangered Saola.",
+      "introduction": "<p>\n                Saola are a type of wild oxen that were first discovered\n                in 1992 as the first large mammal discovery in 50 years.\n                Otherwise known for their scientific name\n                <em>Pseudoryx nghetinhensis</em>, Saola are often called\n                “Asian Unicorns.” Their exact population is unknown,\n                though it is estimated to number only in the hundreds\n                which classifies them as critically endangered.\n            </p>",
+      "sections": [
+        {
+          "heading": "Description",
+          "html": "<p>\n                Saola strongly represent biodiversity in places such as\n                Lao and Vietnam where they reside exclusively in the\n                Annamite Mountains. There is not much knowledge surrounding\n                these creatures as they are rarely seen or documented, and\n                all previous efforts to study them have been unsuccessful,\n                as they often die within weeks or months of captivity.\n                That being said, with the information available, Saolas\n                weigh between 176 and 220 pounds and have been documented\n                with heights of about 33 inches. They are herbivores,\n                feeding on leaves and plants.\n                Both genders have 2 recognisable parallel horns that come\n                to a sharp point and can reach about 20 inches in length.\n                They also have bright white marks on their faces and their\n                muzzles contain large glands which are assumed to be used\n                to mark territory or attract mates.\n            </p>"
+        },
+        {
+          "heading": "Threats",
+          "html": "<p>\n                Habitat loss is the biggest threat to the Saola, though\n                they also face population loss due to hunting and illegal\n                trade of horns and fur. Additionally, their meat has been\n                sold in restaurants and food markets.\n            </p>"
+        },
+        {
+          "heading": "Protection",
+          "html": "<p>\n                These animals are extremely rare, vulnerable and culturally\n                significant within Lao and Vietnam. They also support the\n                environment and multiple unique types of organisms that\n                live within the Annamite Mountains.\n                Areas have been designated specifically to conserve the\n                Saola and their habitats and conservation groups continue\n                to remove snares and traps that pose risk to these animals.\n            </p>"
+        }
+      ],
+      "sources": [
+        {
+          "name": "World Wildlife Fund - Saola",
+          "url": "https://www.worldwildlife.org/species/saola/"
+        },
+        {
+          "name": "Animalia - Saola",
+          "url": "https://animalia.bio/saola?environment=1323"
+        },
+        {
+          "name": "American Museum of Natural History - The Saola",
+          "url": "https://www.amnh.org/research/center-for-biodiversity-conservation/research-and-conservation/biodiversity-exploration-and-monitoring/past-projects/the-saola"
+        }
+      ],
+      "colors": {
+        "intro": "#f2eee5",
+        "description": "#d9c59d",
+        "threats": "#bfd18f",
+        "protection": "#afd6cc"
+      }
+    },
+    {
+      "id": "red-crowned-amazon",
+      "name": "Red Crowned Amazon",
+      "category": "Birds",
+      "image": "img/Screenshot 2026-10-05 034049.png",
+      "imageAlt": "Red Crowned Amazon",
+      "theme": "amazon-page",
+      "teaser": "Click here to learn more about the endangered Red Crowned Amazon.",
+      "introduction": "<p>\n                Red-crowned Amazons, otherwise known by their scientific name, \n              “Amazona viridigenalis,” are parrots native to northeastern Mexico \n              and southern Texas. They are classified as an endangered species \n              with a steadily declining population of around 2000.\n            </p>",
+      "sections": [
+        {
+          "heading": "Description",
+          "html": "<p>\n              Red-Crowned Amazons are a fairly large species of parrot, often \n              weighing an average of about 11.2 ounces and reaching lengths of \n              about 13 inches. Their bodies are primarily bright green, with distinctive \n              red feathers covering their foreheads and crowns and light green feathers \n              on their cheeks. They can live for more than 20 years in the wild, while \n              captive Red-Crowned Amazons may survive for over 50 years. They are also \n              social birds, living in flocks and communal roosts for much of the year. \n              During the morning, they travel from their roosts to feeding areas. With a \n              primary diet of seeds and fruit, these birds use both their bills and feet \n              to manipulate their food.\n            </p>"
+        },
+        {
+          "heading": "Threats",
+          "html": "<p>\n              Habitat destruction and illegal capture for pet trade are the \n              primary threats facing Red-crowned Amazons. Their native habitat has \n              experienced extensive vegetation loss and fragmentation, while \n              thousands of wild birds were historically exported each year as pets. \n              Poachers frequently target nestlings and may destroy the trees \n              containing their nests while removing young birds, further reducing both \n              the population and available nesting habitats.\n            </p>"
+        },
+        {
+          "heading": "Protection",
+          "html": "<p>\n              Forest tracts in Mexico are being safeguarded to help protect the \n              Red-Crowned Amazon’s native habitat, along with large private ranches \n              and older residential trees that provide essential nesting cavities. \n              Conservationists are also deploying man-made nesting boxes to provide \n              more shelter and habitats for these birds. Additionally, conservationists \n              are pushing for increased public education and regulation to help inform \n              people of the dangers and risks of wild-caught pets and prevent further \n              illegal collection.\n            </p>"
+        }
+      ],
+      "sources": [
+        {
+          "name": "Cornell Lab of Ornithology - Red-crowned Amazon",
+          "url": "https://www.allaboutbirds.org/guide/Red-crowned_Amazon/overview"
+        },
+        {
+          "name": "Hawaiʻi Birding Trails - Red-crowned Parrot",
+          "url": "https://hawaiibirdingtrails.hawaii.gov/bird/red-crowned-parrot/"
+        }
+      ],
+      "colors": {
+        "intro": "#eef5e8",
+        "description": "#a5d7a4",
+        "threats": "#efaea9",
+        "protection": "#bdd5ed"
+      }
+    },
+    {
+      "id": "california-condor",
+      "name": "California Condor",
+      "category": "Birds",
+      "image": "img/david-trinks-california_condor.jpg",
+      "imageAlt": "California Condor",
+      "theme": "condor-page",
+      "teaser": "Click here to learn more about the endangered California Condor.",
+      "introduction": "<p>\n              California Condors, otherwise known by their scientific name, \n              “Gymnogyps californianus,” are critically endangered birds found \n              throughout portions of the western United States and northern Mexico. \n              Today, they have a total population of more than 500 birds in captivity and the wild.\n            </p>",
+      "sections": [
+        {
+          "heading": "Description",
+          "html": "<p>\n              California Condors are the largest land birds in North America. They\n              stand approximately 3 to 3.5 feet tall, weighing between 17 and 25 pounds, \n              and possessing wingspans of about 9.5 feet. Adult California Condors \n              have primarily black feathers with white areas underneath their wings \n              and mostly bald heads and necks that can display a variety of different \n              shades. They have an average lifespan of approximately 60 years, though \n              some have been known to live between 45 and 80 years. Condors are social \n              and intelligent scavengers that consume carrion, primarily feeding on \n              carcasses of animals such as deer, cattle, sheep and marine mammals. \n              They locate food using their excellent eyesight and can soar as high as \n              15,000 feet while traveling up to 250 miles in a single day. Condors \n              reproduce slowly, as they reach sexual maturity between approximately 5 and 7 \n              years of age and generally produce only one egg at a time during breeding.\n            </p>"
+        },
+        {
+          "heading": "Threats",
+          "html": "<p>\n              Lead poisoning is the leading cause of death among adult California \n              Condors in the wild. Since these birds feed on animal carcasses, they \n              often consume pieces of spent lead ammunition that are left inside deceased, \n              hunted animals. They also encounter a lot of human trash and may feed \n              small pieces of glass and metal to their young, resulting in injury, starvation, \n              and death. Human development and severe wildfires are more threats that \n              California Condors face as these factors degrade areas that Condors use for \n              feeding, nesting, and roosting.\n            </p>"
+        },
+        {
+          "heading": "Protection",
+          "html": "<p>\n              By 1987, all remaining wild California Condors had been placed into a \n              captive breeding program to prevent their extinction. Reintroduction into \n              the wild began in 1992 and continues today. The U.S. Fish and Wildlife \n              Service works alongside public and private partners through the California \n              Condor Recovery Program to breed and restore Condors to the wild. Conservation \n              efforts also focus on reducing lead exposure, with organizations such as \n              Defenders of Wildlife advocating for the use of non-lead ammunition and \n              protection of important Condor habitat.\n            </p>"
+        }
+      ],
+      "sources": [
+        {
+          "name": "Defenders of Wildlife - California Condor",
+          "url": "https://defenders.org/wildlife/california-condor?s_src=3WDW1900PJXXX&s_subsrc=googlegrant&gad_source=1&gad_campaignid=174696196&gbraid=0AAAAAD8E5Ji1nLJGfxDm_ODe-yx997yrw&gclid=CjwKCAjwifjVBhBKEiwAYx4K9Mt0d8abMEZFRpA4hnYulmt03ogcRYLCCq1MpAGgYp3V2ylBn-oYKhoC-dUQAvD_BwE"
+        },
+        {
+          "name": "U.S. Fish and Wildlife Service - California Condor",
+          "url": "https://www.fws.gov/species/california-condor-gymnogyps-californianus"
+        }
+      ],
+      "colors": {
+        "intro": "#f0f0f0",
+        "description": "#d8d8d8",
+        "threats": "#e5af9b",
+        "protection": "#b9cee5"
+      }
+    },
+    {
+      "id": "kakapo",
+      "name": "Kākāpō",
+      "category": "Birds",
+      "image": "img/chatgpt_kakapo.png",
+      "imageAlt": "Kākāpō",
+      "theme": "kakapo-page",
+      "teaser": "Click here to learn more about the endangered Kakapo.",
+      "introduction": "<p>\n              Kākāpō, otherwise known by their scientific name, “Strigops habroptilus,” \n              are large, flightless parrots found exclusively in New Zealand. With only \n              325 individuals alive today, they are critically endangered with all remaining \n              Kakapo being closely protected and observed.\n            </p>",
+      "sections": [
+        {
+          "heading": "Description",
+          "html": "<p>\n              Kākāpō are large, green parrots recognisable by their owl-like faces \n              and waddling walks. They are the heaviest species of parrot in the world, \n              with male Kākāpō reaching weights of up to 9 pounds. They are also considered \n              to be extremely long-lived birds as their average lifespan ranges between 45 and \n              60 years, though many have been known to live for up to 90 or 100 years. \n              Unlike most parrot species, Kākāpō are flightless and spend most of their lives \n              on the ground. Their wings are used for balance and to break the parrots’ fall \n              when leaping from branches. They are also nocturnal creatures, becoming primarily \n              active at night where they move around their roost and eat native plants, fruit, \n              and pollen. They're also unique in their breeding habits, as they are the only \n              species of parrot in the world known to use a lek breeding system. During their breeding \n              season the male Kākāpō meet in a traditional area to show off and compete for visiting females.\n            </p>"
+        },
+        {
+          "heading": "Threats",
+          "html": "<p>\n              Kākāpō were once widespread throughout New Zealand, however, after the \n              arrival of humans, their population declined dramatically. These parrots \n              were targeted by hunters for their meat, skin and feathers, and, once they \n              became known as scientific curiosities, thousands were killed or captured \n              to bring displays to museums, collections, and zoos. Additionally, the \n              introduction of humans resulted in habitat destruction as settlers cleared \n              land for settlements, agriculture and grazing. Domesticated animals such as \n              free-roaming cats and other animals such as stoats and rats were introduced \n              and targeted Kākāpō for food.\n            </p>"
+        },
+        {
+          "heading": "Protection",
+          "html": "<p>\n                Conservation efforts for Kākāpō began as early as in the 1890s, though \n              the species still became nearly extinct during the mid-1900s. Today, \n              Kākāpō Recovery is the leading organization in the conservation efforts \n              for this species. All remaining Kākāpō live on protected, predator-free \n              offshore islands or within fenced mainland sanctuaries. Conservationists \n              closely manage the population and use a variety of different techniques to \n              better improve breeding and hatching success.\n            </p>"
+        }
+      ],
+      "sources": [
+        {
+          "name": "New Zealand Department of Conservation - Kākāpō",
+          "url": "https://www.doc.govt.nz/nature/native-animals/birds/birds-a-z/kakapo/"
+        },
+        {
+          "name": "Animalia - Kākāpō",
+          "url": "https://animalia.bio/kakapo?property=85"
+        }
+      ],
+      "colors": {
+        "intro": "#f0f4e5",
+        "description": "#cee798",
+        "threats": "#efd17d",
+        "protection": "#a9d1af"
+      }
+    },
+    {
+      "id": "kagu",
+      "name": "Kagu",
+      "category": "Birds",
+      "image": "img/plutozoom-kagu-8621501.jpg",
+      "imageAlt": "Kagu",
+      "theme": "kagu-page",
+      "teaser": "Click here to learn more about the endangered Kagu.",
+      "introduction": "<p>\n              Kagu, otherwise known by their scientific name, “Rhynochetos jubatus,” \n              are rare, primarily flightless birds found exclusively on the island of New \n              Caledonia in the South Pacific. These birds are currently classified as endangered \n              and are considered an important national symbol of New Caledonia.\n            </p>",
+      "sections": [
+        {
+          "heading": "Description",
+          "html": "<p>\n              Kagu can be recognized by their pearl-grey feathers, bright-orange legs and \n              bills, red eyes, and large crests. Their size is comparable to that of a chicken \n              as they often weigh somewhere between 1.5 and 2.4 pounds, and can reach about 22 \n              inches in length. Their average life-span ranges from 20 to 30 years. Kagu have \n              wingspans of about 30 inches, though they are essentially flightless birds. \n              Instead, they use their wings for balance as they move across rough terrain and to \n              distract predators away from their young. Living most of their lives on the ground, \n              Kagu use their strong bills to search through leaves and rocks for larvae, snails, \n              worms, and other small insects and creatures. These birds are also monogamous, \n              typically raising one chick each year with both parents participating in incubation \n              and care.\n            </p>"
+        },
+        {
+          "heading": "Threats",
+          "html": "<p>\n              Kagu have faced numerous threats originating from humans and introduced animals. \n              During the 1800s, their crest feathers became highly sought after for decorative \n              hats, nearly driving the species to extinction through hunting. Animals that were \n              introduced through human activity, such as dogs, cats, pigs, and rats, also preyed \n              upon Kagu. Habitat destruction further contributed to their population decline, with \n              approximately 80% of their original forest habitats having been lost.\n            </p>"
+        },
+        {
+          "heading": "Protection",
+          "html": "<p>\n              New Caledonians currently work to protect Kagu populations and their \n              remaining habitat. San Diego Zoo Global has partnered with the government \n              of New Caledonia to establish a DNA bank that can assist future research. \n              Additionally, conservationists have also controlled predators within protected \n              areas, allowing Kagu to be successfully reintroduced into a national park.\n            </p>"
+        }
+      ],
+      "sources": [
+        {
+          "name": "San Diego Zoo Wildlife Alliance - Kagu",
+          "url": "https://animals.sandiegozoo.org/animals/kagu"
+        },
+        {
+          "name": "BirdLife International - Kagu",
+          "url": "https://datazone.birdlife.org/species/factsheet/kagu-rhynochetos-jubatus"
+        }
+      ],
+      "colors": {
+        "intro": "#f1efec",
+        "description": "#d7dde5",
+        "threats": "#efaa7a",
+        "protection": "#dba0a3"
+      }
+    },
+    {
+      "id": "blue-iguana",
+      "name": "Blue Iguana",
+      "category": "Reptiles",
+      "image": "img/artisticoperations-blue-iguana-6931832.jpg",
+      "imageAlt": "Blue Iguana",
+      "theme": "blue-iguana-page",
+      "teaser": "Click here to learn more about the endangered Blue Iguana.",
+      "introduction": "<p>\n              Blue Iguanas, also known as Grand Cayman Blue Iguanas or by their \n              scientific name, “Cyclura lewisi,” are a species of large lizard found \n              exclusively on the Island of Grand Cayman. With an estimated population of \n              around 443, they are currently classified as an endangered species.\n            </p>",
+      "sections": [
+        {
+          "heading": "Description",
+          "html": "<p>\n              Despite their names, Blue Iguanas can have skin tones ranging from grey to \n              bright blue. The males become especially blue during mating season, while the \n              females generally sport a shade ranging from olive-green to pale blue. \n              Weighing over 25 pounds and reaching lengths of over 5 feet, they are the \n              largest native land vertebrate on the Island of Grand Cayman. They are a \n              long-lived species, with an average lifespan of 25 to 40 years in the wild, \n              and the ability to live up to 69 years in captivity. Blue Iguanas are solitary \n              creatures that are most active during the daytime. Like all other reptiles, \n              they use the sun to warm their bodies, primarily inhabiting dry, rocky, and \n              sunlit areas. They are primarily herbivores, surviving off of leaves, fruit, \n              and flowers, though they have also been observed eating insects and fungi.\n            </p>"
+        },
+        {
+          "heading": "Threats",
+          "html": "<p>\n              Habitat destruction is one of the primary reasons behind the Blue Iguana \n              population’s decline. Land is consistently being cleared throughout Grand Cayman \n              to make room for agriculture, roads, and real estate development which destroys the \n              ecosystems these animals depend on. Other animals, such as rats, cats, and dogs, \n              also contribute to their deaths as they have been known to attack and kill Blue \n              Iguanas for food during various stages of their life cycle. More threats include \n              vehicle collisions and illegal collection for international trade.\n            </p>"
+        },
+        {
+          "heading": "Protection",
+          "html": "<p>\n                Blue Iguanas are protected under laws and international trade agreements. \n              Some portions of their natural habitats are also protected under the National \n              Trust for the Cayman Islands. A Blue Iguana Recovery program was also put \n              in place to establish a successful breeding program. A head-start program is \n              also in place which allows Iguanas to be raised in captivity and then released \n              into protected regions once they reach a size that is less vulnerable to certain predators.\n            </p>"
+        }
+      ],
+      "sources": [
+        {
+          "name": "Smithsonian's National Zoo - Grand Cayman Blue Iguana",
+          "url": "https://nationalzoo.si.edu/animals/grand-cayman-blue-iguana"
+        },
+        {
+          "name": "Animalia - Blue Iguana",
+          "url": "https://animalia.bio/blue-iguana?property=45"
+        }
+      ],
+      "colors": {
+        "intro": "#eef6fb",
+        "description": "#badcf2",
+        "threats": "#9bd1dd",
+        "protection": "#c7bfe5"
+      }
+    },
+    {
+      "id": "central-american-river-turtle",
+      "name": "Central American River Turtle",
+      "category": "Reptiles",
+      "image": "img/central american river turtle chatgpt.png",
+      "imageAlt": "Central American River Turtle",
+      "theme": "cart-page",
+      "teaser": "Click here to learn more about the endangered Central American River Turtle.",
+      "introduction": "<p>\n              Central American River Turtles, otherwise known as Hicatees or by \n              their scientific name, “Dermatemys mawii,” are the only surviving species \n              within their family. They are found exclusively throughout areas of Mexico, \n              Guatemala and Belize and are currently classified as critically endangered \n              as their wild population continues to decline.\n            </p>",
+      "sections": [
+        {
+          "heading": "Description",
+          "html": "<p>\n              Central American River Turtles are the largest freshwater turtles found \n              in Central America, oftentimes reaching lengths of up to 24 inches. They \n              have elongated heads and large nostrils, while males are distinguished by \n              the yellowish color found on their heads. These turtles primarily inhabit \n              large rivers, lakes, oxbows and flooded forests. They are almost entirely \n              aquatic, spending most of their lives in water. Specialized structures in \n              their throats allow them to absorb oxygen directly from water, similar to \n              gills. These structures allow them to stay submerged for extremely long periods. \n              Central American River Turtles are also herbivores and survive by feeding on \n              plant matter. The species is particularly unique because its lineage separated \n              from other living turtles around 80 million years ago, with its closest relatives \n              now known only through fossils.\n            </p>"
+        },
+        {
+          "heading": "Threats",
+          "html": "<p>\n              Unsustainable hunting and habitat degradation are the primary threats \n              that Central American River Turtles face. These turtles are often hunted \n              illegally for their meat, causing their populations to disappear from many \n              areas that were formerly in their range and greatly reducing their \n              populations in the ones that remain.\n            </p>"
+        },
+        {
+          "heading": "Protection",
+          "html": "<p>\n              Central American River Turtles are a protected species and conservation \n              organizations are consistently working to try to restore their populations. \n              The Hicatee Conservation and Research Center is one such organization working \n              to help these turtles thrive by setting up captive breeding programs and creating \n              assurance colonies. Other efforts are also being made such as reintroduction projects, \n              field surveys, habitat protection and community involvement.\n            </p>"
+        }
+      ],
+      "sources": [
+        {
+          "name": "Turtle Survival Alliance - Central American River Turtle",
+          "url": "https://turtlesurvival.org/species-spotlight-central-american-river-turtle/?srsltid=AU7gw4VIxOAfeNLDKq6ZdoMnudWF3ZSpMQ5Tdq3qaAa6mjVKMeuCudYh"
+        },
+        {
+          "name": "Wildlife Conservation Society - Central American River Turtle",
+          "url": "https://programs.wcs.org/5greatforests/en-us/Wildlife/Central-American-River-Turtle"
+        }
+      ],
+      "colors": {
+        "intro": "#edf5ed",
+        "description": "#a9d5c3",
+        "threats": "#dfc493",
+        "protection": "#a8d3df"
+      }
+    },
+    {
+      "id": "darys-burrowing-snake",
+      "name": "Dary’s Burrowing Snake",
+      "category": "Reptiles",
+      "image": "img/dary's burrowing snake Fernando del cid.jpeg",
+      "imageAlt": "Dary’s Burrowing Snake",
+      "theme": "dary-snake-page",
+      "teaser": "Click here to learn more about the endangered Dary's Burrowing Snake.",
+      "introduction": "<p>\n                Dary’s Burrowing Snakes, otherwise known by their scientific name, \n                “Adelphicos daryi,” are a species of snake found exclusively in \n                Guatemala. While their exact population is unknown, they are classified \n                as an endangered species with poor population levels that continue to decline.\n            </p>",
+      "sections": [
+        {
+          "heading": "Description",
+          "html": "<p>\n              Dary’s Burrowing snakes are relatively large compared to other snakes \n              within its species group, as the males often reach lengths exceeding 16 \n              inches, while the females can get up to 22 inches in length. These snakes \n              are native to the central highlands of Guatemala where they can be found \n              in elevated pine-oak forests. They are terrestrial, burrowing, and fossorial \n              animals, meaning they are well adapted to digging and spend most of their \n              lives underground. While underground, Dary’s Burrowing Snakes tend to feed \n              off of earthworms, slugs, and other small, burrowing invertebrates. They are \n              also nocturnal, only emerging from their burrows and becoming active during \n              night time. Additionally, they tend to remain in their native ranges throughout \n              the years, rather than migrating.\n            </p>"
+        },
+        {
+          "heading": "Threats",
+          "html": "<p>\n              Urban sprawl and habitat destruction are the main reasons behind \n              the declining Dary’s Burrowing Snake populations. Since this species is \n              exclusively found within the Guatemalan central highlands, any \n              development that occurs within its limited range threatens the snakes’ \n              population and contributes to its endangerment. By destroying the ecosystems \n              and habitats that Dary’s Burrowing Snakes rely on, these snakes are forced \n              from their native lands and are subject to new predators and unknown territory.\n            </p>"
+        },
+        {
+          "heading": "Protection",
+          "html": "<p>\n              Unfortunately this species lacks a personalized protection plan and \n              instead relies on the broader protection acts which target their native \n              habitats and forests.\n            </p>"
+        }
+      ],
+      "sources": [
+        {
+          "name": "Animalia - Dary’s Burrowing Snake",
+          "url": "https://animalia.bio/darys-burrowing-snake"
+        }
+      ],
+      "colors": {
+        "intro": "#f3eee8",
+        "description": "#d9bb8d",
+        "threats": "#c8d19d",
+        "protection": "#dfa68b"
+      }
+    },
+    {
+      "id": "red-bellied-racer",
+      "name": "Red Bellied Racer",
+      "category": "Reptiles",
+      "image": "img/red bellied racer - michael bakker paiva.jpeg",
+      "imageAlt": "Red Bellied Racer",
+      "theme": "red-belly-page",
+      "teaser": "Click here to learn more about the endangered Red Bellied Racer.",
+      "introduction": "<p>\n                Red-bellied Racers, otherwise known as Saba Racers, Orange-bellied Racers or \n                by their scientific name, “Alsophis rufiventris,” are a species of small snake \n                native to the Lesser Antilles in the Caribbean. They are currently listed as an \n                endangered species, though their population trend has been steady over the last few years.\n            </p>",
+      "sections": [
+        {
+          "heading": "Description",
+          "html": "<p>\n              Red Bellied Racers are small, brown snakes that sport black markings \n              along their backs. They are terrestrial animals, inhabiting both forested \n              areas as well as human-modified environments, such as towns and parks. \n              They are primarily active from dawn until dusk, typically resting during \n              the midday hours. Red Bellied Racers feed on small reptiles and rodents, \n              using their weak venom to subdue their prey before swallowing it whole. \n              Despite possessing rear fangs and venom, these snakes have gentle temperaments \n              and are considered harmless to humans.\n            </p>"
+        },
+        {
+          "heading": "Threats",
+          "html": "<p>\n              Red Bellied Racers face several threats throughout their remaining \n              habitats. Natural disasters are one threat to their survival, as in 2017, \n              Hurricanes Irma and Maria caused extensive damage throughout their native \n              habitats which resulted in habitat loss, decreased prey populations and \n              a spike in deaths among the snakes. Their populations are also threatened \n              by invasive species and domesticated animals. Mongooses caused Red Bellied \n              Racers to become locally extinct on St. Kitts and Nevis, while free-roaming \n              cats continue to prey on the remaining populations, particularly on Saba.\n            </p>"
+        },
+        {
+          "heading": "Protection",
+          "html": "<p>\n              Conservation groups have conducted field surveys to monitor the \n              population of Red Bellied Racers throughout different habitats and \n              elevations to create population estimates. These estimates can then \n              be used as a baseline for future research and conservation efforts. \n              Conservationists also emphasize stronger enforcement of invasive species \n              laws as an important step in preventing these snakes from becoming locally extinct.\n            </p>"
+        }
+      ],
+      "sources": [
+        {
+          "name": "Animalia - Red Bellied Racer",
+          "url": "https://animalia.bio/red-bellied-racer"
+        },
+        {
+          "name": "Statia National Parks - Red Bellied Racer Snake",
+          "url": "https://statiapark.wordpress.com/red-bellied-racer-snake/"
+        },
+        {
+          "name": "Dutch Caribbean Nature Alliance - Red Bellied Racer",
+          "url": "https://dcnanature.org/red-bellied-racer/"
+        }
+      ],
+      "colors": {
+        "intro": "#f5ebe9",
+        "description": "#edb5ae",
+        "threats": "#d8d0c5",
+        "protection": "#e69b9d"
+      }
+    },
+    {
+      "id": "axolotl",
+      "name": "Axolotl",
+      "category": "Amphibians",
+      "image": "img/ladamebucolique-axolotl-2193331.jpg",
+      "imageAlt": "Axolotl",
+      "theme": "axolotl-page",
+      "teaser": "Click here to learn more about the endangered Axolotl.",
+      "introduction": "<p>\n                Axolotls, otherwise known as Mexican Salamanders or by their scientific name, \n                “Ambystoma mexicanum,” are a species of salamander native to lakes and wetlands\n                in southern Mexico City. With an estimated wild population of only 50 to 1,000 \n                mature individuals, they are classified as critically endangered despite being \n                extremely common in captivity.\n            </p>",
+      "sections": [
+        {
+          "heading": "Description",
+          "html": "<p>\n                In the wild, Axolotls are generally dark brown or grey with mottled coloration, \n                though, when bred in captivity they are typically pink, white, or black. They \n                reach about 9 to 12 inches in length when fully grown and only weigh around 50 \n                to 200 grams. Axolotls are a unique species of salamander, as they never undergo \n                metamorphosis and retain their juvenile characteristics throughout adulthood. \n                Because of this, Axolotls are able to remain completely aquatic, retaining their \n                feathery external gills and long tails through the entirety of their lives. They \n                spend their day hiding within sediment and vegetation before emerging at night to \n                hunt, making them nocturnal creatures. They are also carnivores that feed primarily \n                on worms, insect larvae, mollusks, and small fish. Another aspect that makes Axolotls \n                so unique is their ability to regenerate damaged or lost body parts, including eyes, \n                limbs, and even portions of their brains.\n            </p>"
+        },
+        {
+          "heading": "Threats",
+          "html": "<p>\n                Habitat loss and pollution are the main population threats facing wild Axolotls. \n                Their former lake habitat surrounding Mexico City has been extensively drained \n                and developed, leaving the species restricted to a small amount of available \n                aquatic habitats. Water pollution caused by development, agricultural runoff, \n                tourism, and waste makes water unsafe and harmful to these salamanders, and \n                drought and increasing temperatures further contribute to their poor living \n                conditions. Additionally, introduced fish such as carp and tilapia compete with \n                them for food while also consuming their eggs and young.\n            </p>"
+        },
+        {
+          "heading": "Protection",
+          "html": "<p>\n                Axolotls receive legal protection from the Mexican government and are included \n                under Appendix II of CITES. Conservation groups work alongside the Mexican \n                government to restore freshwater habitats and encourage surrounding communities \n                to use traditional farming methods to ensure Axolotls have suitable aquatic habitats. \n                Protected canals have been established which provide Axolotl's refuge from both \n                pollution and invasive fish, while simultaneously helping to improve water quality. \n                Captive breeding and experimental releases have also been implemented to investigate \n                whether populations can eventually be restored to the wild.\n            </p>"
+        }
+      ],
+      "sources": [
+        {
+          "name": "Natural History Museum - Axolotls: Amphibians That Never Grow Up",
+          "url": "https://www.nhm.ac.uk/discover/axolotls-amphibians-that-never-grow-up.html"
+        },
+        {
+          "name": "Earth.Org - Axolotl Endangered Species Spotlight",
+          "url": "https://earth.org/?endangered-species=axolotl-endangered-species-spotlight"
+        }
+      ],
+      "colors": {
+        "intro": "#fbf1f5",
+        "description": "#f3b4c8",
+        "threats": "#d5c1e8",
+        "protection": "#a8d8d5"
+      }
+    },
+    {
+      "id": "berry-cave-salamander",
+      "name": "Berry Cave Salamander",
+      "category": "Amphibians",
+      "image": "img/wikimedia commons berry cave salamander Bgenter.jpg",
+      "imageAlt": "Berry Cave Salamander",
+      "theme": "berry-cave-page",
+      "teaser": "Click here to learn more about the endangered Berry Cave Salamander.",
+      "introduction": "<p>\n              Berry Cave Salamanders, otherwise known by their scientific name, \n              “Gyrinophilus gulolineatus,” are extremely rare salamanders found only \n              within eastern Tennessee. The Tennessee Wildlife Resources Agency \n              currently lists the species as threatened within the state as its \n              population continues to decline.\n            </p>",
+      "sections": [
+        {
+          "heading": "Description",
+          "html": "<p>\n                Berry Cave Salamanders are long-bodied amphibians with body lengths \n              ranging from 4 to 9 inches. Their skin tones range from salmon to pale \n              pink with lighter bellies. Unlike many salamanders, Berry Cave \n              Salamanders maintain some of their juvenile characteristics throughout \n              adulthood. Even when fully grown, these salamanders display larval \n              traits such as small eyes that lack eyelids and feathery red gills. \n              They can be recognized by a distinctive dark stripe that can be found \n              on the front half of their throats. As their name suggests, Berry Cave \n              Salamanders typically inhabit caves, sinkholes, and other areas near \n              cave entrances, particularly favoring caves with inward-flowing water. \n              Their diets consist primarily of aquatic invertebrates such as snails \n              and insect larvae.\n            </p>"
+        },
+        {
+          "heading": "Threats",
+          "html": "<p>\n                Berry Cave Salamanders have extremely limited populations and are known \n              from only a small number of cave systems throughout eastern Tennessee. \n              Similar to most endangered amphibians, habitat degradation and groundwater \n              contamination are the greatest threats facing these creatures. Above-ground \n              development and urbanization have resulted in substantial population declines, \n              as runoff interferes with the water quality and creates poor living conditions \n              for Berry Cave Salamanders.\n            </p>"
+        },
+        {
+          "heading": "Protection",
+          "html": "<p>\n                Researchers have conducted surveys and population studies to better understand \n              the Berry Cave Salamanders’ distribution, abundance and conservation needs. The \n              research is also used to guide continued conservation and management of the remaining \n              populations, in the hopes of helping restore their numbers . Additionally, access to \n              several caves inhabited by these salamanders is highly restricted in an effort to \n              protect the species and its remaining habitats from disturbance.\n            </p>"
+        }
+      ],
+      "sources": [
+        {
+          "name": "Tennessee Wildlife Resources Agency - Berry Cave Salamander",
+          "url": "https://www.tn.gov/twra/wildlife/amphibians/salamanders/berry-cave-salamander.html"
+        },
+        {
+          "name": "Oak Ridge National Laboratory - Distribution, Ecology, Life History and Conservation Status of the Berry Cave Salamander",
+          "url": "https://www.ornl.gov/publication/distribution-ecology-life-history-and-conservation-status-berry-cave-salamander"
+        }
+      ],
+      "colors": {
+        "intro": "#faf0ed",
+        "description": "#efb4a3",
+        "threats": "#b9d2dd",
+        "protection": "#d8afca"
+      }
+    },
+    {
+      "id": "hickory-nut-gorge-green-salamander",
+      "name": "Hickory Nut Gorge Green Salamander",
+      "category": "Amphibians",
+      "image": "img/Tristan Clark - tree nut gorge green salamander.jpg",
+      "imageAlt": "Hickory Nut Gorge Green Salamander",
+      "theme": "gorge-green-page",
+      "teaser": "Click here to learn more about the endangered Tree Nut Gorge Green Salamander.",
+      "introduction": "<p>\n              Hickory Nut Gorge Green Salamanders, otherwise known by their scientific name, \n              “Aneides caryaensis,” are extremely rare salamanders found exclusively within the \n              Hickory Nut Gorge of North Carolina’s Blue Ridge Mountains. Scientists estimate \n              that only a few hundred individuals remain today, leaving the species critically \n              endangered and at risk of extinction.\n            </p>",
+      "sections": [
+        {
+          "heading": "Description",
+          "html": "<p>\n              Hickory Nut Gorge Green Salamanders are recognisable by the brightly \n              colored yellow markings that cover their otherwise dark, brown bodies. \n              This appearance allows these salamanders to camouflage themselves among \n              vegetation and rocks. Unlike many other salamander species, Hickory Nut \n              Gorge Green Salamanders spend much of their lives inhabiting trees and \n              rocky outcrops. Their diet almost entirely consists of insects, centering \n              around beetles and ants as their primary source of food. The entire known \n              range of the Hickory Nut Gorge Green Salamander is limited to a single \n              14-mile long gorge in North Carolina, which makes the species extremely \n              vulnerable to changes within their habitat.\n            </p>"
+        },
+        {
+          "heading": "Threats",
+          "html": "<p>\n                Habitat destruction is one of the largest threats facing the Hickory \n              Nut Gorge Green Salamander population. Development for tourism, real estate, \n              and energy infrastructure has fragmented portions of their already limited \n              habitats, and their small population and restricted range leave them \n              particularly vulnerable to loss of genetic diversity through inbreeding. \n              Natural disasters are equally as detrimental, as storms and landslides \n              can damage and degrade their habitats even further. Climate change poses \n              an additional threat to the species, as hotter, dryer climates can cause \n              the salamanders to dry out and die.\n            </p>"
+        },
+        {
+          "heading": "Protection",
+          "html": "<p>\n              The Center for Biological Diversity, Defenders of Wildlife and the \n              Amphibian and Reptile Conservancy petitioned the U.S. Fish and Wildlife \n              Service in 2022 to protect the Hickory Nut Gorge Green Salamander under \n              the Endangered Species Act. The Center and Defenders of Wildlife have \n              also worked alongside the North Carolina Wildlife Resources Commission \n              and other organizations within Hickory Nut Gorge to protect remaining \n              populations. These efforts focus on obtaining stronger protections for \n              both the salamanders and their extremely limited habitat.\n            </p>"
+        }
+      ],
+      "sources": [
+        {
+          "name": "Center for Biological Diversity - Hickory Nut Gorge Green Salamander",
+          "url": "https://biologicaldiversity.org/w/news/press-releases/endangered-species-protection-sought-for-north-carolinas-hickory-nut-gorge-green-salamanders-2022-06-13/?gad_source=1&gad_campaignid=23238296567&gbraid=0AAAAAD3I-HM3BHTMkj-M5zanHO9qZP_1S&gclid=CjwKCAjwifjVBhBKEiwAYx4K9DvjEDYvfDlOY_NkELAvlI-iERJQMDL7JCkGuMgOev4SCO-r-Z5BbhoCDa0QAvD_BwE"
+        },
+        {
+          "name": "NatureServe Explorer - Hickory Nut Gorge Green Salamander",
+          "url": "https://explorer.natureserve.org/Taxon/ELEMENT_GLOBAL.2.1157658/Aneides_caryaensis"
+        },
+        {
+          "name": "Phoenix Species Project - Hickory Nut Gorge Green Salamander",
+          "url": "https://phoenixspeciesproject.org/species/hickory-nut-gorge-green-salamander/"
+        }
+      ],
+      "colors": {
+        "intro": "#f1f4e8",
+        "description": "#bdd17b",
+        "threats": "#d9c39b",
+        "protection": "#a9d2a0"
+      }
+    },
+    {
+      "id": "lemur-leaf-frog",
+      "name": "Lemur Leaf Frog",
+      "category": "Amphibians",
+      "image": "img/lemur leaf frog chatgpt.png",
+      "imageAlt": "Lemur Leaf Frog",
+      "theme": "lemur-leaf-page",
+      "teaser": "Click here to learn more about the endangered Lemur Leaf Frog.",
+      "introduction": "<p>\n              Lemur Leaf Frogs, otherwise known as Lemur Tree Frogs or by \n              their scientific name, “Agalychnis lemur,” are small frogs native \n              to Central America. Due to severe declines in their populations, \n              they are currently classified as a critically endangered species.\n            </p>",
+      "sections": [
+        {
+          "heading": "Description",
+          "html": "<p>\n                Lemur Leaf Frogs have thin bodies and long limbs. They sport a \n              bright yellow-green skin tone with dark speckles and spots scattered \n              around their body. Females tend to be between 4 and 5 centimeters in \n              length, while males reach between 3 and 4 centimeters and their \n              estimated lifespan ranges between 5 and 10 years. Lemur Leaf Frogs \n              are typically found in forests throughout Costa Rica, Panama, and \n              portions of Colombia. As their name suggests, they spend most of their \n              lives among tree branches and foliage. They are strictly nocturnal and \n              have large white and black eyes with vertical pupils, similar to that \n              of a cat's, which help them see at night. Their skin changes depending \n              on their activity, appearing bright green during the day and changing \n              to brown or olive green while they rest camouflaged on leaves at night. \n              Lemur Leaf Frogs primarily move by grasping branches and slowly walking, \n              rather than jumping. Additionally, their diet consists of insects and \n              other small invertebrates.\n            </p>"
+        },
+        {
+          "heading": "Threats",
+          "html": "<p>\n                One of the biggest threats to the Lemur Leaf Frog is deforestation, \n              as these frogs rely heavily on undisturbed forest for habitat and food. \n              They have also experienced immense population loss due to chytridiomycosis \n              which is a disease caused by chytrid fungus. Chytridiomycosis attacks the \n              keratin rich skin of these frogs causing it to thicken, shed, and become \n              discolored. This is especially fatal as amphibians use their skin for water \n              regulation and breathing, though it seems to impact frogs the most. Although \n              some surviving populations appear to possess resistance to the fungus, the\n              species now occupies only a portion of its former range.\n            </p>"
+        },
+        {
+          "heading": "Protection",
+          "html": "<p>\n                Thankfully, Lemur Leaf Frog has been successfully bred within zoos \n              and other managed populations. The Smithsonian’s National Zoo maintains\n              a breeding program designed to preserve genetic diversity and establish\n              a population that could be returned to the wild in the future if conditions\n              become suitable. Citizen Conservation similarly works with private \n              breeders and zoos to maintain captive populations and preserve their \n              genetic diversity, providing another population outside of their threatened\n              natural habitat.\n            </p>"
+        }
+      ],
+      "sources": [
+        {
+          "name": "Smithsonian's National Zoo - Lemur Leaf Frog",
+          "url": "https://nationalzoo.si.edu/animals/lemur-leaf-frog"
+        },
+        {
+          "name": "Citizen Conservation - Lemur Leaf Frog",
+          "url": "https://citizen-conservation.org/en/portfolio/lemur-leaf-frog/"
+        },
+        {
+          "name": "Cornell Wildlife Health Lab - Chytridiomycosis",
+          "url": "https://cwhl.vet.cornell.edu/resource/chytridiomycosis"
+        }
+      ],
+      "colors": {
+        "intro": "#f2f6e8",
+        "description": "#c9e784",
+        "threats": "#d9c8a5",
+        "protection": "#94d2b3"
+      }
+    }
+  ]
+}
