@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Rebecca Hayes">
+    <meta name="description" content="Learn about endangered wildlife and the threats affecting species survival.">
+    <title>Explore | The Threat of Extinction</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="js/explore.js?v=20261018-3" defer></script>
+</head>
+<body class="choice-page">
+<header>
+        <nav class="navbar" aria-label="Main navigation">
+            <a class="website-name" href="index.html">The Threat of Extinction</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="choice.html">Explore</a></li>
+                <li><a href="static.html">Animal Directory</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><button class="login-placeholder" type="button" disabled aria-label="Log In (planned for a later stage)">Log In</button></li>
+            </ul>
+        </nav>
+    </header>
+<main class="choice-information" id="explorer">
+    <section class="choice-introduction">
+<h1>Explore Endangered Animals</h1>
+<p>
+                Choose a category below to learn more about endangered animals, the threats they face, and the efforts being made to protect them.
+            </p>
+</section>
+    <section class="choice-cards" id="category-choices" aria-label="Choose an animal category">
+    <button type="button" class="choice-card mammal-choice" data-category="Mammals"><h2>Mammals</h2><p>Click here to learn more about some endangered mammals and their threats.</p></button><button type="button" class="choice-card bird-choice" data-category="Birds"><h2>Birds</h2><p>Click here to learn more about some endangered birds and their threats.</p></button><button type="button" class="choice-card reptile-choice" data-category="Reptiles"><h2>Reptiles</h2><p>Click here to learn more about some endangered reptiles and their threats.</p></button><button type="button" class="choice-card amphibian-choice" data-category="Amphibians"><h2>Amphibians</h2><p>Click here to learn more about some endangered amphibians and their threats.</p></button>
+    </section>
+    <section id="interactive-content" hidden></section>
+    <div class="load-message" id="load-message" aria-live="polite">Loading animal information...</div>
+</main>
+<footer><p>The Threat of Extinction</p><p><a href="contact.html">Contact Us</a></p></footer>
+</body>
+</html>
