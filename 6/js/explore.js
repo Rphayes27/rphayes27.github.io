@@ -1,9 +1,9 @@
 "use strict";
 
-// Load the JSON when the explorer page is ready.
+// Load the JSON
 document.addEventListener("DOMContentLoaded", initializeExplorer);
 
-// Coordinate page navigation and externally fetched animal information.
+// Coordinate page navigation and animal information.
 function initializeExplorer() {
     const categoryChoices = document.getElementById("category-choices");
     const interactiveContent = document.getElementById("interactive-content");
@@ -45,7 +45,7 @@ function initializeExplorer() {
     let activeCategory = null;
     let activeAnimalId = null;
 
-    // Build a text-only status message and an optional retry button.
+    // Text-only status message and an optional retry button.
     function displayLoadingMessage(message, allowRetry = false) {
         loadMessage.replaceChildren();
         loadMessage.hidden = false;
@@ -62,7 +62,7 @@ function initializeExplorer() {
         }
     }
 
-    // Fetch the external JSON and validate its basic structure before use.
+    // Fetch the external JSON and validate its structure.
     async function loadAnimals() {
         loadingError = false;
         displayLoadingMessage("Loading animal information...");
@@ -100,7 +100,7 @@ function initializeExplorer() {
         return button;
     }
 
-    // Return to the original four-category selection without reloading the page.
+    // Return to the original selection.
     function displayCategories() {
         activeCategory = null;
         activeAnimalId = null;
@@ -113,7 +113,7 @@ function initializeExplorer() {
         }
     }
 
-    // After step one, replace the category choices with that category's four animals.
+    // Replace the category choices.
     function displayCategory(category) {
         if (!Object.hasOwn(categoryDescriptions, category)) {
             return;
@@ -159,16 +159,13 @@ function initializeExplorer() {
         });
         interactiveContent.append(speciesGrid);
     }
-
-    // Create an existing author's paragraph markup from the trusted local JSON file.
     function insertAnimalParagraphs(section, paragraphHtml) {
-        // Paragraph markup in this file is copied from the original site, not from visitors.
         const textContainer = document.createElement("div");
         textContainer.innerHTML = paragraphHtml;
         section.append(...textContainer.childNodes);
     }
 
-    // After step two, display all information for the selected animal on this same page.
+    // After step two, display all information for the selected animal without page change.
     function displayAnimal(id) {
         const animal = animals.find(entry => entry.id === id);
         if (!animal) {
@@ -244,7 +241,7 @@ function initializeExplorer() {
         interactiveContent.scrollIntoView({behavior: "auto", block: "start"});
     }
 
-    // Attach category click events once, even before data has finished loading.
+    // Attach category click events once.
     categoryChoices.querySelectorAll("[data-category]").forEach(button => {
         button.addEventListener("click", () => displayCategory(button.dataset.category));
     });
