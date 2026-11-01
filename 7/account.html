@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+        <meta content="Rebecca Hayes" name="author">
+
+        <title>Your Account | The Threat of Extinction</title>
+
+        <link href="style.css?v=stage4-single" rel="stylesheet">
+
+    </head>
+
+    <body class="contact-page" data-protected="true">
+        <header>
+            <nav aria-label="Main navigation" class="navbar">
+                <a class="website-name" href="index.html">The Threat of Extinction</a>
+                <ul class="nav-links">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+
+                    <li>
+                        <a href="choice.html">Explore</a>
+                    </li>
+
+                    <li>
+                        <a href="static.html">Animal Directory</a>
+                    </li>
+
+                    <li>
+                        <a href="contact.html">Contact Us</a>
+                    </li>
+
+                    <li class="nav-guest" hidden="">
+                        <a href="login.html">Log In / Sign Up</a>
+                    </li>
+
+                    <li class="nav-user" hidden="">
+                        <a href="account.html">Account</a>
+                    </li>
+
+                    <li class="nav-user" hidden="">
+                        <button class="nav-button" id="logout-button" type="button">Log Out</button>
+                    </li>
+                </ul>
+
+                <span aria-live="polite" class="nav-message" id="nav-message" role="status"></span>
+            </nav>
+        </header>
+
+        <div aria-live="polite" class="auth-gate" id="auth-gate" role="status">
+            <p id="auth-gate-message">
+                Checking your login...
+            </p>
+
+            <a href="login.html">Log In / Sign Up</a>
+        </div>
+
+        <main class="contact-information">
+            <section class="contact-introduction">
+                <h1>Your Account</h1>
+
+                <p>Signed in as <strong id="account-email">Loading...</strong></p>
+
+                <p>
+                    Change your password below. You'll need your current password.
+                </p>
+            </section>
+
+            <section class="contact-card">
+                <h2>Change Password</h2>
+
+                <form class="contact-form" id="password-form">
+                    <div class="form-group">
+                        <label for="current-password">Current Password</label>
+                        <input autocomplete="current-password" id="current-password" required="" type="password">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="new-password">New Password</label>
+                        <input autocomplete="new-password" id="new-password" minlength="6" required="" type="password">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="confirm-new-password">Confirm New Password</label>
+                        <input autocomplete="new-password" id="confirm-new-password" minlength="6" required="" type="password">
+                    </div>
+
+                    <button class="contact-button" type="submit">Update Password</button>
+                </form>
+
+                <p aria-live="polite" class="form-message" id="password-message" role="status"></p>
+            </section>
+        </main>
+
+        <footer>
+            <p>
+                The Threat of Extinction
+            </p>
+        </footer>
+
+        <dialog aria-describedby="login-dialog-message" aria-labelledby="login-dialog-title" class="login-required-dialog" id="login-required-dialog">
+            <h2 id="login-dialog-title">Login Required</h2>
+            <p id="login-dialog-message">
+                You must log in to continue.
+            </p>
+
+            <div class="login-dialog-actions">
+                <button class="dialog-cancel-button" id="dialog-cancel-button" type="button">Not Now</button>
+                <a class="dialog-login-button" href="login.html" id="dialog-login-link">Log In / Sign Up</a>
+            </div>
+        </dialog>
+
+        <script src="js/account.js?v=stage4-2" type="module"></script>
+
+        <script src="js/site.js?v=stage4-3" type="module"></script>
+    </body>
+</html>
