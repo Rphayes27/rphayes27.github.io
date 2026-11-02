@@ -4,7 +4,6 @@ import { auth, database } from "./firebase.js";
 import { onAuthStateChanged } from "https://www.gstatic.com/firebasejs/13.1.0/firebase-auth.js";
 import { get, ref } from "https://www.gstatic.com/firebasejs/13.1.0/firebase-database.js";
 
-// Wait for authentication before requesting the protected Firebase data.
 let explorerStarted = false;
 onAuthStateChanged(auth, user => {
     if (user && !explorerStarted) {
@@ -13,7 +12,6 @@ onAuthStateChanged(auth, user => {
     }
 });
 
-// Coordinate page navigation and externally fetched animal information.
 function initializeExplorer() {
     const categoryChoices = document.getElementById("category-choices");
     const interactiveContent = document.getElementById("interactive-content");
@@ -54,7 +52,6 @@ function initializeExplorer() {
     let activeCategory = null;
     let activeAnimalId = null;
 
-    // Build a text-only status message and an optional retry button.
     function displayLoadingMessage(message, allowRetry = false) {
         loadMessage.replaceChildren();
         loadMessage.hidden = false;
@@ -71,7 +68,6 @@ function initializeExplorer() {
         }
     }
 
-    // Read the imported animals from Firebase Realtime Database.
     async function loadAnimals() {
         loadingError = false;
         displayLoadingMessage("Loading animal information from Firebase...");
@@ -100,7 +96,6 @@ function initializeExplorer() {
         }
     }
 
-    // Create an ordinary button with a click event handler.
     function makeButton(label, className, clickHandler) {
         const button = document.createElement("button");
         button.type = "button";
@@ -110,7 +105,6 @@ function initializeExplorer() {
         return button;
     }
 
-    // Return to the original four-category selection without reloading the page.
     function displayCategories() {
         activeCategory = null;
         activeAnimalId = null;
@@ -123,7 +117,6 @@ function initializeExplorer() {
         }
     }
 
-    // After step one, replace the category choices with that category's four animals.
     function displayCategory(category) {
         if (!Object.hasOwn(categoryDescriptions, category)) {
             return;
@@ -187,7 +180,6 @@ function initializeExplorer() {
         }
     }
 
-    // After step two, display all information for the selected animal on this same page.
     function displayAnimal(id) {
         const animal = animals.find(entry => entry.id === id);
         if (!animal) {
@@ -263,7 +255,6 @@ function initializeExplorer() {
         interactiveContent.scrollIntoView({behavior: "auto", block: "start"});
     }
 
-    // Attach category click events once, even before data has finished loading.
     categoryChoices.querySelectorAll("[data-category]").forEach(button => {
         button.addEventListener("click", () => displayCategory(button.dataset.category));
     });
