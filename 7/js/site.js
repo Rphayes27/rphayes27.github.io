@@ -21,7 +21,6 @@ let currentUser = null;
 let sessionChecked = false;
 let pendingDestination = null;
 
-// Keep the visitor on the same page while the popup handles login or signup.
 const authDialog = setupAuthDialog(loginDialog, () => {
     const destination = pendingDestination;
     pendingDestination = null;
@@ -35,7 +34,6 @@ const authDialog = setupAuthDialog(loginDialog, () => {
     }
 });
 
-// Display the popup instead of navigating to a separate login screen.
 function showLoginDialog(destination = null) {
     pendingDestination = destination;
     authDialog.showPrompt();
@@ -45,7 +43,6 @@ function showLoginDialog(destination = null) {
     }
 }
 
-// Update the navigation to match the current Firebase user.
 function updateNavigation(user) {
     guestLinks.forEach(link => {
         link.hidden = Boolean(user);
@@ -56,12 +53,10 @@ function updateNavigation(user) {
     });
 }
 
-// Let the login button in the header open the same popup on every page.
 document.querySelectorAll("[data-open-login]").forEach(button => {
     button.addEventListener("click", () => showLoginDialog());
 });
 
-// Keep protected-page links on the current page until the visitor has logged in.
 document.querySelectorAll('a[href]').forEach(link => {
     const url = new URL(link.href, window.location.href);
     const page = url.pathname.split("/").pop();
@@ -87,7 +82,6 @@ document.querySelectorAll('a[href]').forEach(link => {
     });
 });
 
-// Close the dialog without changing pages.
 function closeLoginDialog() {
     pendingDestination = null;
     loginDialog.close();
@@ -99,7 +93,6 @@ loginDialog.addEventListener("close", () => {
     pendingDestination = null;
 });
 
-// Display a login prompt on protected pages when opened directly while signed out.
 onAuthStateChanged(auth, user => {
     currentUser = user;
     sessionChecked = true;
@@ -141,7 +134,6 @@ onAuthStateChanged(auth, user => {
     }
 });
 
-// Sign the current user out and return to the public homepage.
 if (logoutButton) {
     logoutButton.addEventListener("click", async () => {
         logoutButton.disabled = true;
