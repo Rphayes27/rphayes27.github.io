@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+        <meta content="Rebecca Hayes" name="author">
+
+        <meta content="Learn about endangered wildlife and the threats affecting species survival." name="description">
+
+        <title>Animal Directory | The Threat of Extinction</title>
+
+        <link href="style.css?v=stage4-modal-1" rel="stylesheet">
+
+    </head>
+
+    <body class="static-page" data-protected="true">
+        <header>
+            <nav aria-label="Main navigation" class="navbar">
+                <a class="website-name" href="index.html">The Threat of Extinction</a>
+                <ul class="nav-links">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+
+                    <li>
+                        <a href="choice.html">Explore</a>
+                    </li>
+
+                    <li>
+                        <a href="static.html">Animal Directory</a>
+                    </li>
+
+                    <li>
+                        <a href="contact.html">Contact Us</a>
+                    </li>
+
+                    <li class="nav-guest">
+                        <button class="nav-button nav-login-button" data-open-login type="button">Log In / Sign Up</button>
+                    </li>
+
+                    <li class="nav-user" hidden="">
+                        <a href="account.html">Account</a>
+                    </li>
+
+                    <li class="nav-user" hidden="">
+                        <button class="nav-button" id="logout-button" type="button">Log Out</button>
+                    </li>
+                </ul>
+
+                <span aria-live="polite" class="nav-message" id="nav-message" role="status"></span>
+            </nav>
+        </header>
+
+        <main class="directory-information">
+            <section class="choice-introduction">
+                <h1>Endangered Animal Directory</h1>
+
+                <p>
+                    Explore the animal categories and featured species on this website. Choose Explore to view their complete
+                    information.
+                </p>
+            </section>
+
+            <div class="directory-groups">
+                <section class="directory-group mammal-choice">
+                    <h2>Mammals</h2>
+
+                    <p>
+                        Select a mammal below to learn more about the species, the threats they face, and the efforts being made
+                        to protect them.
+                    </p>
+
+                    <ul>
+                        <li>Black Rhino</li>
+
+                        <li>Ground Pangolin</li>
+
+                        <li>Red Wolves</li>
+
+                        <li>Saola</li>
+                    </ul>
+
+                    <a class="directory-explore-link" href="choice.html">Explore Mammals</a>
+                </section>
+
+                <section class="directory-group bird-choice">
+                    <h2>Birds</h2>
+
+                    <p>
+                        Select a bird below to learn more about the species, the threats they face, and the efforts being made to
+                        protect them.
+                    </p>
+
+                    <ul>
+                        <li>Red Crowned Amazon</li>
+
+                        <li>California Condor</li>
+
+                        <li>Kākāpō</li>
+
+                        <li>Kagu</li>
+                    </ul>
+
+                    <a class="directory-explore-link" href="choice.html">Explore Birds</a>
+                </section>
+
+                <section class="directory-group reptile-choice">
+                    <h2>Reptiles</h2>
+
+                    <p>
+                        Select a reptile below to learn more about the species, the threats they face, and the efforts being made
+                        to protect them.
+                    </p>
+
+                    <ul>
+                        <li>Blue Iguana</li>
+
+                        <li>Central American River Turtle</li>
+
+                        <li>Dary’s Burrowing Snake</li>
+
+                        <li>Red Bellied Racer</li>
+                    </ul>
+
+                    <a class="directory-explore-link" href="choice.html">Explore Reptiles</a>
+                </section>
+
+                <section class="directory-group amphibian-choice">
+                    <h2>Amphibians</h2>
+
+                    <p>
+                        Select an amphibian below to learn more about the species, the threats they face, and the efforts being
+                        made to protect them.
+                    </p>
+
+                    <ul>
+                        <li>Axolotl</li>
+
+                        <li>Berry Cave Salamander</li>
+
+                        <li>Hickory Nut Gorge Green Salamander</li>
+
+                        <li>Lemur Leaf Frog</li>
+                    </ul>
+
+                    <a class="directory-explore-link" href="choice.html">Explore Amphibians</a>
+                </section>
+            </div>
+        </main>
+
+        <footer>
+            <p>
+                The Threat of Extinction
+            </p>
+
+            <p><a href="contact.html">Contact Us</a></p>
+        </footer>
+
+                <dialog aria-describedby="login-dialog-message" aria-labelledby="login-dialog-title" class="login-required-dialog" id="login-required-dialog">
+            <section id="login-dialog-prompt">
+                <h2 id="login-dialog-title">Login Required</h2>
+
+                <p id="login-dialog-message">
+                    You must log in to continue.
+                </p>
+
+                <div class="login-dialog-actions">
+                    <button class="dialog-cancel-button" id="dialog-cancel-button" type="button">Not Now</button>
+
+                    <button class="dialog-login-button" id="dialog-login-button" type="button">Log In / Sign Up</button>
+                </div>
+            </section>
+
+            <section id="auth-dialog-panel" hidden>
+                <h2 id="auth-dialog-title">Log In</h2>
+
+                <div class="auth-dialog-tabs" role="group" aria-label="Choose login or signup">
+                    <button class="auth-tab-button active" id="auth-login-tab" type="button">Log In</button>
+
+                    <button class="auth-tab-button" id="auth-signup-tab" type="button">Sign Up</button>
+                </div>
+
+                <form class="contact-form auth-dialog-form" id="login-form">
+                    <div class="form-group">
+                        <label for="login-email">Email</label>
+
+                        <input autocomplete="email" id="login-email" required type="email">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="login-password">Password</label>
+
+                        <input autocomplete="current-password" id="login-password" required type="password">
+                    </div>
+
+                    <button class="contact-button" type="submit">Log In</button>
+                </form>
+
+                <form class="contact-form auth-dialog-form" id="signup-form" hidden>
+                    <div class="form-group">
+                        <label for="signup-email">Email</label>
+
+                        <input autocomplete="email" id="signup-email" required type="email">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="signup-password">Password (at least 6 characters)</label>
+
+                        <input autocomplete="new-password" id="signup-password" minlength="6" required type="password">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="confirm-password">Confirm Password</label>
+
+                        <input autocomplete="new-password" id="confirm-password" minlength="6" required type="password">
+                    </div>
+
+                    <button class="contact-button" type="submit">Create Account</button>
+                </form>
+
+                <p aria-live="polite" class="form-message" id="auth-dialog-message" role="status"></p>
+
+                <div class="auth-dialog-actions">
+                    <button class="dialog-cancel-button" id="auth-back-button" type="button">Back</button>
+
+                    <button class="dialog-cancel-button" id="auth-close-button" type="button">Cancel</button>
+                </div>
+            </section>
+        </dialog>
+
+        <script src="js/site.js?v=stage4-modal-1" type="module"></script>
+    </body>
+</html>

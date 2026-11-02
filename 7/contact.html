@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+        <meta content="Rebecca Hayes" name="author">
+
+        <meta content="Learn about endangered wildlife and the threats affecting species survival." name="description">
+
+        <title>Contact Us | The Threat of Extinction</title>
+
+        <link href="style.css?v=stage4-modal-1" rel="stylesheet">
+
+    </head>
+
+    <body class="contact-page" data-protected="true">
+        <header>
+            <nav aria-label="Main navigation" class="navbar">
+                <a class="website-name" href="index.html">The Threat of Extinction</a>
+                <ul class="nav-links">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+
+                    <li>
+                        <a href="choice.html">Explore</a>
+                    </li>
+
+                    <li>
+                        <a href="static.html">Animal Directory</a>
+                    </li>
+
+                    <li>
+                        <a href="contact.html">Contact Us</a>
+                    </li>
+
+                    <li class="nav-guest">
+                        <button class="nav-button nav-login-button" data-open-login type="button">Log In / Sign Up</button>
+                    </li>
+
+                    <li class="nav-user" hidden="">
+                        <a href="account.html">Account</a>
+                    </li>
+
+                    <li class="nav-user" hidden="">
+                        <button class="nav-button" id="logout-button" type="button">Log Out</button>
+                    </li>
+                </ul>
+
+                <span aria-live="polite" class="nav-message" id="nav-message" role="status"></span>
+            </nav>
+        </header>
+
+        <main class="contact-information">
+            <section class="contact-introduction">
+                <h1>Contact Us</h1>
+
+                <p>
+                    Have any questions, comments, or concerns? Contact us here by entering your information below. Whether
+                    you have a question about the animals featured on our website, want to share feedback, or simply want to
+                    learn more, we would love to hear from you.
+                </p>
+            </section>
+
+            <section class="contact-card">
+                <form class="contact-form" id="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input id="name" name="name" placeholder="Enter your name" required="" type="text">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input id="email" name="email" placeholder="Enter your email" required="" type="email">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input id="subject" name="subject" placeholder="Enter a subject" type="text">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="reason">Reason for Contact</label>
+                        <select id="reason" name="reason">
+                            <option value="">Select a reason</option>
+                            <option value="question">General Question</option>
+                            <option value="animal">Question About an Animal</option>
+                            <option value="feedback">Website Feedback</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" placeholder="Enter your message here" required="" rows="8"></textarea>
+                    </div>
+
+                    <button class="contact-button" type="submit">Send Message</button>
+                </form>
+
+                <p aria-live="polite" class="form-message" id="contact-message" role="status"></p>
+            </section>
+        </main>
+
+        <footer>
+            <p>
+                The Threat of Extinction
+            </p>
+
+            <p><a href="contact.html">Contact Us</a></p>
+        </footer>
+
+                <dialog aria-describedby="login-dialog-message" aria-labelledby="login-dialog-title" class="login-required-dialog" id="login-required-dialog">
+            <section id="login-dialog-prompt">
+                <h2 id="login-dialog-title">Login Required</h2>
+
+                <p id="login-dialog-message">
+                    You must log in to continue.
+                </p>
+
+                <div class="login-dialog-actions">
+                    <button class="dialog-cancel-button" id="dialog-cancel-button" type="button">Not Now</button>
+
+                    <button class="dialog-login-button" id="dialog-login-button" type="button">Log In / Sign Up</button>
+                </div>
+            </section>
+
+            <section id="auth-dialog-panel" hidden>
+                <h2 id="auth-dialog-title">Log In</h2>
+
+                <div class="auth-dialog-tabs" role="group" aria-label="Choose login or signup">
+                    <button class="auth-tab-button active" id="auth-login-tab" type="button">Log In</button>
+
+                    <button class="auth-tab-button" id="auth-signup-tab" type="button">Sign Up</button>
+                </div>
+
+                <form class="contact-form auth-dialog-form" id="login-form">
+                    <div class="form-group">
+                        <label for="login-email">Email</label>
+
+                        <input autocomplete="email" id="login-email" required type="email">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="login-password">Password</label>
+
+                        <input autocomplete="current-password" id="login-password" required type="password">
+                    </div>
+
+                    <button class="contact-button" type="submit">Log In</button>
+                </form>
+
+                <form class="contact-form auth-dialog-form" id="signup-form" hidden>
+                    <div class="form-group">
+                        <label for="signup-email">Email</label>
+
+                        <input autocomplete="email" id="signup-email" required type="email">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="signup-password">Password (at least 6 characters)</label>
+
+                        <input autocomplete="new-password" id="signup-password" minlength="6" required type="password">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="confirm-password">Confirm Password</label>
+
+                        <input autocomplete="new-password" id="confirm-password" minlength="6" required type="password">
+                    </div>
+
+                    <button class="contact-button" type="submit">Create Account</button>
+                </form>
+
+                <p aria-live="polite" class="form-message" id="auth-dialog-message" role="status"></p>
+
+                <div class="auth-dialog-actions">
+                    <button class="dialog-cancel-button" id="auth-back-button" type="button">Back</button>
+
+                    <button class="dialog-cancel-button" id="auth-close-button" type="button">Cancel</button>
+                </div>
+            </section>
+        </dialog>
+
+        <script src="js/contact.js?v=stage4-2" type="module"></script>
+
+        <script src="js/site.js?v=stage4-modal-1" type="module"></script>
+    </body>
+</html>
