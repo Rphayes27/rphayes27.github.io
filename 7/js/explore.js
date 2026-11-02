@@ -163,7 +163,6 @@ function initializeExplorer() {
         interactiveContent.append(speciesGrid);
     }
 
-    // Display animal information stored as text lines or as original HTML.
     function insertAnimalParagraph(section, content) {
         if (Array.isArray(content)) {
             const paragraph = document.createElement("p");
