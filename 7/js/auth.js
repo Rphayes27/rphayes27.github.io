@@ -7,7 +7,6 @@ import {
     signInWithEmailAndPassword
 } from "https://www.gstatic.com/firebasejs/13.1.0/firebase-auth.js";
 
-// Set up the login and signup forms inside the existing popup.
 export function setupAuthDialog(dialog, onAuthenticated) {
     const prompt = dialog.querySelector("#login-dialog-prompt");
     const panel = dialog.querySelector("#auth-dialog-panel");
@@ -18,14 +17,12 @@ export function setupAuthDialog(dialog, onAuthenticated) {
     const loginTab = dialog.querySelector("#auth-login-tab");
     const signupTab = dialog.querySelector("#auth-signup-tab");
 
-    // Show feedback directly inside the popup, never with window.alert().
     function showMessage(text, isError = false) {
         message.textContent = text;
         message.classList.toggle("error-message", isError);
         message.classList.toggle("success-message", !isError);
     }
 
-    // Convert Firebase error codes into messages visitors can understand.
     function getErrorMessage(error) {
         switch (error.code) {
             case "auth/email-already-in-use":
@@ -54,7 +51,6 @@ export function setupAuthDialog(dialog, onAuthenticated) {
         }
     }
 
-    // Switch between the two forms without opening a different HTML page.
     function showForm(mode = "login") {
         const signingUp = mode === "signup";
 
@@ -73,7 +69,6 @@ export function setupAuthDialog(dialog, onAuthenticated) {
         emailField.focus();
     }
 
-    // Restore the original 'Login Required' popup when the visitor closes it.
     function showPrompt() {
         panel.hidden = true;
         prompt.hidden = false;
@@ -82,7 +77,6 @@ export function setupAuthDialog(dialog, onAuthenticated) {
         signupForm.reset();
     }
 
-    // Prevent duplicate submissions while Firebase processes a request.
     async function submitRequest(form, operation) {
         const button = form.querySelector('button[type="submit"]');
         button.disabled = true;
@@ -98,7 +92,6 @@ export function setupAuthDialog(dialog, onAuthenticated) {
         }
     }
 
-    // Sign in with the email and password provided in the popup.
     loginForm.addEventListener("submit", event => {
         event.preventDefault();
         const email = dialog.querySelector("#login-email").value.trim();
@@ -108,7 +101,6 @@ export function setupAuthDialog(dialog, onAuthenticated) {
         submitRequest(loginForm, () => signInWithEmailAndPassword(auth, email, password));
     });
 
-    // Create an email/password account using the signup form in the popup.
     signupForm.addEventListener("submit", event => {
         event.preventDefault();
         const email = dialog.querySelector("#signup-email").value.trim();
