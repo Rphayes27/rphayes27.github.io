@@ -7,14 +7,12 @@ const contactForm = document.getElementById("contact-form");
 const contactMessage = document.getElementById("contact-message");
 const submitButton = contactForm.querySelector('button[type="submit"]');
 
-// Display progress and form errors without browser alert popups.
 function showMessage(text, isError = false) {
     contactMessage.textContent = text;
     contactMessage.classList.toggle("error-message", isError);
     contactMessage.classList.toggle("success-message", !isError);
 }
 
-// Upload one new contact message to the user's Firebase database.
 async function submitContact(event) {
     event.preventDefault();
 
