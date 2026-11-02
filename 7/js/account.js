@@ -12,21 +12,18 @@ const passwordForm = document.getElementById("password-form");
 const passwordMessage = document.getElementById("password-message");
 const accountEmail = document.getElementById("account-email");
 
-// Show errors and progress in the document, not an alert popup.
 function showMessage(message, isError = false) {
     passwordMessage.textContent = message;
     passwordMessage.classList.toggle("error-message", isError);
     passwordMessage.classList.toggle("success-message", !isError);
 }
 
-// Display the email address belonging to the current account.
 onAuthStateChanged(auth, user => {
     if (user && accountEmail) {
         accountEmail.textContent = user.email || "Signed-in user";
     }
 });
 
-// Reauthenticate before changing the account password.
 async function changePassword(event) {
     event.preventDefault();
 
