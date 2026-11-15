@@ -54,7 +54,10 @@ section {
 .linkthree,
 .linkfour,
 .linkfive,
-.linksix {
+.linksix,
+.linkseven,
+.linkeight,
+.linknine {
     text-align: center;
     margin: 20px auto;
 }
