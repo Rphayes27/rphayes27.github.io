@@ -67,7 +67,8 @@ section {
 .linkfive ul,
 .linksix ul,
 .linkseven ul,
-.linkeight ul {
+.linkeight ul,
+.linknine ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
@@ -81,7 +82,8 @@ section {
 .linkfive a,
 .linksix a,
 .linkseven a,
-.linkeight a {
+.linkeight a,
+.linknine a {
     color: #471025;
     font-size: 18px;
     text-decoration-line: underline;
